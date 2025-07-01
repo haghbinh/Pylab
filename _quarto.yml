@@ -3,11 +3,17 @@ project:
   output-dir: docs
 
 website:
-  title: "Cool Website."
   navbar:
+    background: primary
+    search: true
     left:
-      - stuff/item1.qmd
-      - stuff/item2.qmd
-  drafts:
-    - stuff/item2.qmd
-  draft-mode: unlinked
+      - text: "Home"
+        href: index.qmd
+      - talks.qmd
+      - about.qmd 
+  page-navigation: true
+
+format:
+  html:
+    theme: flatly
+    css: styles.css

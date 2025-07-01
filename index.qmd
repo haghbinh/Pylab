@@ -1,27 +1,42 @@
 ---
-title: "Finley Malloc"
+title: "دوره آموزش پایتون"
+format:
+  html:
+    toc: true
+    lang: fa
+    direction: rtl
+    theme: flatly
+    
 about:
   template: jolla
-  image: profile.jpg
+  image: Python-logo.png
   links:
     - icon: twitter
       text: twitter
       href: https://twitter.com
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.haghbinh.com
+  
 ---
 
-Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.
+د!
 
-## Education
+این دوره از سطح مقدماتی تا پیشرفته، اصول برنامه‌نویسی با پایتون را با استفاده از مثال‌های کاربردی، نوت‌بوک‌های تعاملی و پروژه‌های واقعی آموزش می‌دهد.
 
-University of California, San Diego \| San Diego, CA PhD in Mathematics \| Sept 2011 - June 2015
+## سرفصل‌ها
 
-Macalester College \| St. Paul, MN B.A in Economics \| Sept 2007 - June 2011
+- [مقدمه و نصب ابزارها](intro.qmd)
+- [متغیرها و انواع داده](data-types.qmd)
+- [کنترل جریان برنامه](control-flow.qmd)
+- [توابع و ماژول‌ها](functions.qmd)
+- [برنامه‌نویسی شی‌گرا](oop.qmd)
+- [کار با NumPy و pandas](numpy-pandas.qmd)
 
-## Experience
+## نحوه اجرا
 
-Wengo Analytics \| Head Data Scientist \| April 2018 - present
+برای اجرای نوت‌بوک‌ها:
 
-GeoScynce \| Chief Analyst \| Spet 2012 - April 2018
+```bash
+pip install -r requirements.txt
+```

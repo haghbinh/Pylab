@@ -2,22 +2,43 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Finley Malloc",
+    "title": "دوره آموزش پایتون",
     "section": "",
-    "text": "Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana."
+    "text": "د!\nاین دوره از سطح مقدماتی تا پیشرفته، اصول برنامه‌نویسی با پایتون را با استفاده از مثال‌های کاربردی، نوت‌بوک‌های تعاملی و پروژه‌های واقعی آموزش می‌دهد."
   },
   {
     "objectID": "index.html#education",
     "href": "index.html#education",
-    "title": "Finley Malloc",
+    "title": "دوره آموزش پایتون",
     "section": "Education",
     "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul, MN B.A in Economics | Sept 2007 - June 2011"
   },
   {
     "objectID": "index.html#experience",
     "href": "index.html#experience",
-    "title": "Finley Malloc",
+    "title": "دوره آموزش پایتون",
     "section": "Experience",
     "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Spet 2012 - April 2018"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#سرفصلها",
+    "href": "index.html#سرفصلها",
+    "title": "دوره آموزش پایتون",
+    "section": "سرفصل‌ها",
+    "text": "سرفصل‌ها\n\nمقدمه و نصب ابزارها\nمتغیرها و انواع داده\nکنترل جریان برنامه\nتوابع و ماژول‌ها\nبرنامه‌نویسی شی‌گرا\nکار با NumPy و pandas"
+  },
+  {
+    "objectID": "index.html#نحوه-اجرا",
+    "href": "index.html#نحوه-اجرا",
+    "title": "دوره آموزش پایتون",
+    "section": "نحوه اجرا",
+    "text": "نحوه اجرا\nبرای اجرای نوت‌بوک‌ها:\npip install -r requirements.txt"
   }
 ]
