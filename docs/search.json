@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "دوره آموزش پایتون",
     "section": "",
-    "text": "د!\nاین دوره از سطح مقدماتی تا پیشرفته، اصول برنامه‌نویسی با پایتون را با استفاده از مثال‌های کاربردی، نوت‌بوک‌های تعاملی و پروژه‌های واقعی آموزش می‌دهد."
+    "text": "مدرس دوره‌های علوم داده و هوش مصنوعی\nاین دوره از سطح مقدماتی تا پیشرفته، اصول برنامه‌نویسی با پایتون را با استفاده از مثال‌های کاربردی، نوت‌بوک‌های تعاملی و پروژه‌های واقعی آموزش می‌دهد."
   },
   {
     "objectID": "index.html#education",
@@ -40,5 +40,75 @@
     "title": "دوره آموزش پایتون",
     "section": "نحوه اجرا",
     "text": "نحوه اجرا\nبرای اجرای نوت‌بوک‌ها:\npip install -r requirements.txt"
+  },
+  {
+    "objectID": "index.html#part-1-elementary-python-پایتون-مقدماتی",
+    "href": "index.html#part-1-elementary-python-پایتون-مقدماتی",
+    "title": "دوره آموزش پایتون",
+    "section": "🟢 Part 1: Elementary Python | پایتون مقدماتی",
+    "text": "🟢 Part 1: Elementary Python | پایتون مقدماتی\n\n\n\nSection\nدرس\nEnglish Title\nعنوان فارسی\nLink\n\n\n\n\n1\nدرس اول\nData Types, Strings, Operators\nانواع داده‌ها، رشته‌ها و عملگرها\nNotebook\n\n\n2\nدرس دوم\nControl Flow\nکنترل جریان\nNotebook\n\n\n3\nدرس سوم\nFunctions\nتوابع\nNotebook\n\n\n4\nدرس چهارم\nLists\nلیست‌ها\nNotebook\n\n\n5\nدرس پنجم\nTuples & Dictionaries\nچندتایی‌ها و دیکشنری‌ها\nNotebook\n\n\n6\nدرس ششم\nMini Projects Review\nمرور چند مینی پروژه\nNotebook\n\n\n7\nدرس هفتم\nLambda, Filter, Map, Zip\nتوابع lambda، filter، map، zip\nNotebook\n\n\n8\nدرس هشتم\nFile Handling\nکار با فایل‌ها\nNotebook"
+  },
+  {
+    "objectID": "index.html#part-2-intermediate-python-پایتون-متوسط",
+    "href": "index.html#part-2-intermediate-python-پایتون-متوسط",
+    "title": "دوره آموزش پایتون",
+    "section": "🟡 Part 2: Intermediate Python | پایتون متوسط",
+    "text": "🟡 Part 2: Intermediate Python | پایتون متوسط\n\n\n\nSection\nدرس\nEnglish Title\nعنوان فارسی\nLink\n\n\n\n\n9\nدرس نهم\nNumPy Basics\nمقدمات NumPy\nNotebook\n\n\n10\nدرس دهم\nPandas Basics\nمقدمات Pandas\nNotebook\n\n\n11\nدرس یازدهم\nMerge, Join, Concatenate (Pandas)\nادغام و ترکیب داده‌ها در Pandas\nNotebook\n\n\n-\nپروژه فروش\nSales Analysis Project\nپروژه تحلیل فروش\nNotebook"
+  },
+  {
+    "objectID": "index.html#part-3-advanced-python-پایتون-پیشرفته",
+    "href": "index.html#part-3-advanced-python-پایتون-پیشرفته",
+    "title": "دوره آموزش پایتون",
+    "section": "🔵 Part 3: Advanced Python | پایتون پیشرفته",
+    "text": "🔵 Part 3: Advanced Python | پایتون پیشرفته\n\n\n\nSection\nدرس\nEnglish Title\nعنوان فارسی\nLink\n\n\n\n\n12\nدرس دوازدهم\nOOP in Python\nبرنامه‌نویسی شی‌گرا\nNotebook • Slides\n\n\n13\nدرس سیزدهم\nSQLite Database\nپایگاه‌داده SQLite\nNotebook • Slides\n\n\n14\nدرس چهاردهم\nTkinter GUI\nرابط گرافیکی Tkinter\nNotebook\n\n\n15\nپروژه نمونه ۱\nPhone Book Project\nپروژه دفترچه تلفن\nFolder\n\n\n16\nپروژه نمونه ۲\nBank Project\nپروژه بانک\nFolder"
+  },
+  {
+    "objectID": "index.html#پایتون-مقدماتی-elementary-python",
+    "href": "index.html#پایتون-مقدماتی-elementary-python",
+    "title": "دوره آموزش پایتون",
+    "section": "🟢 پایتون مقدماتی | Elementary Python",
+    "text": "🟢 پایتون مقدماتی | Elementary Python\n\n\n\n\n🔢 بخش\n🧑‍🏫 درس\n📝 عنوان انگلیسی\n📚 عنوان فارسی\n🔗 لینک\n\n\n\n\n1\nدرس اول\nData Types, Strings, Operators\nانواع داده‌ها، رشته‌ها و عملگرها\nNotebook\n\n\n2\nدرس دوم\nControl Flow\nکنترل جریان\nNotebook\n\n\n3\nدرس سوم\nFunctions\nتوابع\nNotebook\n\n\n4\nدرس چهارم\nLists\nلیست‌ها\nNotebook\n\n\n5\nدرس پنجم\nTuples & Dictionaries\nچندتایی‌ها و دیکشنری‌ها\nNotebook\n\n\n6\nدرس ششم\nMini Projects Review\nمرور مینی‌پروژه‌ها\nNotebook\n\n\n7\nدرس هفتم\nLambda, Filter, Map, Zip\nتوابع lambda، filter، map، zip\nNotebook\n\n\n8\nدرس هشتم\nFile Handling\nکار با فایل‌ها\nNotebook"
+  },
+  {
+    "objectID": "index.html#پایتون-متوسط-intermediate-python",
+    "href": "index.html#پایتون-متوسط-intermediate-python",
+    "title": "دوره آموزش پایتون",
+    "section": "🟡 پایتون متوسط | Intermediate Python",
+    "text": "🟡 پایتون متوسط | Intermediate Python\n\n\n\n\n🔢 بخش\nدرس\nEnglish Title\nعنوان فارسی\nلینک\n\n\n\n\n9\nدرس نهم\nNumPy Basics\nمقدمات NumPy\nNotebook\n\n\n10\nدرس دهم\nPandas Basics\nمقدمات Pandas\nNotebook\n\n\n11\nدرس یازدهم\nMerge, Join, Concatenate\nادغام و ترکیب داده‌ها\nNotebook\n\n\n-\nپروژه فروش\nSales Analysis Project\nپروژه تحلیل فروش\nNotebook"
+  },
+  {
+    "objectID": "index.html#پایتون-پیشرفته-advanced-python",
+    "href": "index.html#پایتون-پیشرفته-advanced-python",
+    "title": "دوره آموزش پایتون",
+    "section": "🔵 پایتون پیشرفته | Advanced Python",
+    "text": "🔵 پایتون پیشرفته | Advanced Python\n\n\n\n\n🔢 بخش\nدرس\nEnglish Title\nعنوان فارسی\nلینک\n\n\n\n\n12\nدوازدهم\nOOP in Python\nبرنامه‌نویسی شی‌گرا\nNotebook • Slides\n\n\n13\nسیزدهم\nSQLite Database\nپایگاه‌داده SQLite\nNotebook • Slides\n\n\n14\nچهاردهم\nTkinter GUI\nرابط گرافیکی Tkinter\nNotebook\n\n\n15\nپروژه ۱\nPhone Book Project\nپروژه دفترچه تلفن\nFolder\n\n\n16\nپروژه ۲\nBank Project\nپروژه بانک\nFolder"
+  },
+  {
+    "objectID": "index.html#پیشنیازها",
+    "href": "index.html#پیشنیازها",
+    "title": "دوره آموزش پایتون",
+    "section": "🛠 پیش‌نیازها",
+    "text": "🛠 پیش‌نیازها\nبرای اجرای فایل‌ها از دستورات زیر استفاده کنید:\npip install -r requirements.txt"
+  },
+  {
+    "objectID": "index.html#پایتون-مقدماتی",
+    "href": "index.html#پایتون-مقدماتی",
+    "title": "دوره آموزش پایتون",
+    "section": "🟢 پایتون مقدماتی",
+    "text": "🟢 پایتون مقدماتی\n\n\n\n\n🔢 بخش\n🧑‍🏫 درس\n📝 عنوان انگلیسی\n📚 عنوان فارسی\n🔗 لینک\n\n\n\n\n1\nدرس اول\nData Types, Strings, Operators\nانواع داده‌ها، رشته‌ها و عملگرها\nNotebook\n\n\n2\nدرس دوم\nControl Flow\nکنترل جریان\nNotebook\n\n\n3\nدرس سوم\nFunctions\nتوابع\nNotebook\n\n\n4\nدرس چهارم\nLists\nلیست‌ها\nNotebook\n\n\n5\nدرس پنجم\nTuples & Dictionaries\nچندتایی‌ها و دیکشنری‌ها\nNotebook\n\n\n6\nدرس ششم\nMini Projects Review\nمرور مینی‌پروژه‌ها\nNotebook\n\n\n7\nدرس هفتم\nLambda, Filter, Map, Zip\nتوابع lambda، filter، map، zip\nNotebook\n\n\n8\nدرس هشتم\nFile Handling\nکار با فایل‌ها\nNotebook"
+  },
+  {
+    "objectID": "index.html#پایتون-متوسط",
+    "href": "index.html#پایتون-متوسط",
+    "title": "دوره آموزش پایتون",
+    "section": "🟡 پایتون متوسط",
+    "text": "🟡 پایتون متوسط\n\n\n\n\n🔢 بخش\nدرس\nEnglish Title\nعنوان فارسی\nلینک\n\n\n\n\n9\nدرس نهم\nNumPy Basics\nمقدمات NumPy\nNotebook\n\n\n10\nدرس دهم\nPandas Basics\nمقدمات Pandas\nNotebook\n\n\n11\nدرس یازدهم\nMerge, Join, Concatenate\nادغام و ترکیب داده‌ها\nNotebook\n\n\n-\nپروژه فروش\nSales Analysis Project\nپروژه تحلیل فروش\nNotebook"
+  },
+  {
+    "objectID": "index.html#پایتون-پیشرفته",
+    "href": "index.html#پایتون-پیشرفته",
+    "title": "دوره آموزش پایتون",
+    "section": "🔵 پایتون پیشرفته",
+    "text": "🔵 پایتون پیشرفته\n\n\n\n\n🔢 بخش\nدرس\nEnglish Title\nعنوان فارسی\nلینک\n\n\n\n\n12\nدوازدهم\nOOP in Python\nبرنامه‌نویسی شی‌گرا\nNotebook • Slides\n\n\n13\nسیزدهم\nSQLite Database\nپایگاه‌داده SQLite\nNotebook • Slides\n\n\n14\nچهاردهم\nTkinter GUI\nرابط گرافیکی Tkinter\nNotebook\n\n\n15\nپروژه ۱\nPhone Book Project\nپروژه دفترچه تلفن\nFolder\n\n\n16\nپروژه ۲\nBank Project\nپروژه بانک\nFolder"
   }
 ]

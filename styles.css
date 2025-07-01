@@ -1,1 +1,39 @@
-/* css styles */
+/* styles.css */
+.table-responsive {
+  overflow-x: auto;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  direction: rtl;
+  text-align: right;
+}
+th, td {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+}
+th {
+  background-color: #e0f7fa;
+}
+td a {
+  color: #007bff;
+  text-decoration: none;
+}
+td a:hover {
+  text-decoration: underline;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('fonts/Vazir.woff2') format('woff2'),
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  font-family: 'Vazir', sans-serif;
+  line-height: 2;
+}
