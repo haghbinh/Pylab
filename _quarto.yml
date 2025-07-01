@@ -12,7 +12,7 @@ website:
       - text: "خانه"
         href: index.qmd
   page-navigation: true
-
+  favicon: images/favicon.ico
 format:
   html:
     css: styles.css

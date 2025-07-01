@@ -95,20 +95,20 @@
     "href": "index.html#پایتون-مقدماتی",
     "title": "دوره آموزش پایتون",
     "section": "🟢 پایتون مقدماتی",
-    "text": "🟢 پایتون مقدماتی\n\n\n\n\n🔢 بخش\n🧑‍🏫 درس\n📝 عنوان انگلیسی\n📚 عنوان فارسی\n🔗 لینک\n\n\n\n\n1\nدرس اول\nData Types, Strings, Operators\nانواع داده‌ها، رشته‌ها و عملگرها\nNotebook\n\n\n2\nدرس دوم\nControl Flow\nکنترل جریان\nNotebook\n\n\n3\nدرس سوم\nFunctions\nتوابع\nNotebook\n\n\n4\nدرس چهارم\nLists\nلیست‌ها\nNotebook\n\n\n5\nدرس پنجم\nTuples & Dictionaries\nچندتایی‌ها و دیکشنری‌ها\nNotebook\n\n\n6\nدرس ششم\nMini Projects Review\nمرور مینی‌پروژه‌ها\nNotebook\n\n\n7\nدرس هفتم\nLambda, Filter, Map, Zip\nتوابع lambda، filter، map، zip\nNotebook\n\n\n8\nدرس هشتم\nFile Handling\nکار با فایل‌ها\nNotebook"
+    "text": "🟢 پایتون مقدماتی\n\n\n\n\n\n\n\n\n\n\n\n🔢 بخش\n🧑‍🏫 درس\n📝 عنوان انگلیسی\n📚 جزئیات\n🔗 لینک\n\n\n\n\n1\nنصب و معرفی محیط\nSetup and Intro\nمقدمه‌ای بر پایتون و محیط برنامه‌نویسینصب Python، Jupyter، Google Colab، VS Code\n-\n\n\n2\nانواع داده\nData Types\nمتغیرها، اعداد، رشته‌ها، بولی\n-\n\n\n3\nعملگرها\nOperators\nعملگرهای ریاضی، مقایسه‌ای، منطقی\n-\n\n\n4\nورودی/خروجی\nInput / Output\ninput(), print(), f-string، format()\n-\n\n\n5\nکنترل جریان\nControl Flow\nشرط‌ها، حلقه‌ها، break و continue\n-\n\n\n6\nتوابع\nFunctions\nتعریف توابع، پارامتر، مقدار بازگشتی، math\n-\n\n\n7\nساختارهای داده\nData Structures\nلیست، تاپل، دیکشنری، مجموعه‌ها\n-\n\n\n8\nپروژه نهایی\nFinal Project\nگزارش نمرات دانشجویان با میانگین و واریانس\n-"
   },
   {
     "objectID": "index.html#پایتون-متوسط",
     "href": "index.html#پایتون-متوسط",
     "title": "دوره آموزش پایتون",
     "section": "🟡 پایتون متوسط",
-    "text": "🟡 پایتون متوسط\n\n\n\n\n🔢 بخش\nدرس\nEnglish Title\nعنوان فارسی\nلینک\n\n\n\n\n9\nدرس نهم\nNumPy Basics\nمقدمات NumPy\nNotebook\n\n\n10\nدرس دهم\nPandas Basics\nمقدمات Pandas\nNotebook\n\n\n11\nدرس یازدهم\nMerge, Join, Concatenate\nادغام و ترکیب داده‌ها\nNotebook\n\n\n-\nپروژه فروش\nSales Analysis Project\nپروژه تحلیل فروش\nNotebook"
+    "text": "🟡 پایتون متوسط\n\n\n\n\n\n\n\n\n\n\n\n🔢 بخش\nدرس\nEnglish Title\nعنوان فارسی\nلینک\n\n\n\n\n9\nتوابع پیشرفته\nFunctional Programming\nلامبدا، map, filter, zip\n-\n\n\n10\nفایل‌ها\nFile Handling\nفایل‌های متنی، CSV، JSON\n-\n\n\n11\nمقدمات NumPy\nNumPy Basics\nآرایه، عملیات برداری، آماره‌های ساده\n-\n\n\n12\nمقدمات Pandas\nPandas Basics\nساخت DataFrame، گروه‌بندی، فیلتر\n-\n\n\n13\nبصری‌سازی\nVisualization\nنمودار خطی، ستونی، دایره‌ای با Matplotlib\n-\n\n\n14\nپروژه میانی\nIntermediate Project\nتحلیل فروش با Pandas و نمودار\n-"
   },
   {
     "objectID": "index.html#پایتون-پیشرفته",
     "href": "index.html#پایتون-پیشرفته",
     "title": "دوره آموزش پایتون",
     "section": "🔵 پایتون پیشرفته",
-    "text": "🔵 پایتون پیشرفته\n\n\n\n\n🔢 بخش\nدرس\nEnglish Title\nعنوان فارسی\nلینک\n\n\n\n\n12\nدوازدهم\nOOP in Python\nبرنامه‌نویسی شی‌گرا\nNotebook • Slides\n\n\n13\nسیزدهم\nSQLite Database\nپایگاه‌داده SQLite\nNotebook • Slides\n\n\n14\nچهاردهم\nTkinter GUI\nرابط گرافیکی Tkinter\nNotebook\n\n\n15\nپروژه ۱\nPhone Book Project\nپروژه دفترچه تلفن\nFolder\n\n\n16\nپروژه ۲\nBank Project\nپروژه بانک\nFolder"
+    "text": "🔵 پایتون پیشرفته\n\n\n\n\n\n\n\n\n\n\n\n🔢 بخش\nدرس\nEnglish Title\nعنوان فارسی\nلینک\n\n\n\n\n15\nشی‌گرایی پایه\nBasic OOP\nکلاس، سازنده، ویژگی‌ها، متدها\n-\n\n\n16\nشی‌گرایی پیشرفته\nAdvanced OOP\nوراثت چندگانه، overriding، متدهای کلاس\n-\n\n\n17\nپایگاه داده\nSQLite\nایجاد جدول، درج و حذف، اتصال با sqlite3\n-\n\n\n18\nرابط گرافیکی\nGUI with Tkinter\nفرم، دکمه، اتصال گرافیکی به DB\n-\n\n\n19\nمدیریت پروژه\nProject Management\nvenv، ساختار پروژه، requirements.txt\n-\n\n\n20\nپروژه نهایی\nFinal Project\nدفترچه تلفن گرافیکی با SQLite\n-"
   }
 ]
