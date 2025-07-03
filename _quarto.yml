@@ -3,14 +3,6 @@ project:
   output-dir: docs
 
 website:
-  navbar:
-    background: primary
-    search: true
-    right:
-      - talks.qmd
-      - about.qmd 
-      - text: "خانه"
-        href: index.qmd
   page-navigation: true
   favicon: images/favicon.ico
 format:
