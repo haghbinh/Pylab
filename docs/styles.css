@@ -28,50 +28,32 @@ td a:hover {
 @font-face {
   font-family: 'Vazir';
   src: url('fonts/Vazir.woff2') format('woff2'),
+       url('fonts/Vazir.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'IranNastaliq';
-  src: url('fonts/IranNastaliq.ttf') format('truetype');
+  src: url('fonts/IranNastaliq.woff2') format('woff2'),
+       url('fonts/IranNastaliq.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: 'Vazir', sans-serif;
-  line-height: 2;
+  font-family: Vazir, Tahoma, sans-serif;
 }
 
+h1, .title {
+  font-family: 'IranNastaliq', Tahoma, serif;
+}
+
+
 h1 {
-  font-family: 'IranNastaliq', serif;
   font-size: 3.5em;
   color: #2d3436;
   margin-bottom: 0.5rem;
   text-align: center;
 }
 
-h2 {
-  font-family: 'IranNastaliq', serif;
-  font-size: 3em;
-  color: #2d3436;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-
-h3 {
-  font-family: 'IranNastaliq', serif;
-  font-size: 2em;
-  color: #2d3436;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-
-h4 {
-  font-family: 'IranNastaliq', serif;
-  font-size: 1.2em;
-  color: #2d3436;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
