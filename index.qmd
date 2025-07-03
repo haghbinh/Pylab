@@ -1,5 +1,5 @@
 ---
-title: "دوره آموزش پایتون"
+title: "برنامه‌نویسی پایتون"
 format:
   html:
     toc: true
