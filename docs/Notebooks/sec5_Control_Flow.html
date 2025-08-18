@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="fa" xml:lang="fa"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.32">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>برنامه‌نویسی پایتون</title>
+<title>sec5_control_flow</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,22 +58,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/favicon.ico" rel="icon">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-eaf9f7b2eff0675dc85d7d6a3549247f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-991b1886d3c685c7aa2b62b80640c7af.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -103,292 +104,186 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="quarto-light">
+<body class="fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-  <ul>
-  <li><a href="#سطح-مقدماتی" id="toc-سطح-مقدماتی" class="nav-link active" data-scroll-target="#سطح-مقدماتی">🟢 سطح مقدماتی</a></li>
-  <li><a href="#سطح-متوسط" id="toc-سطح-متوسط" class="nav-link" data-scroll-target="#سطح-متوسط">🟡 سطح متوسط</a></li>
-  <li><a href="#سطح-پیشرفته" id="toc-سطح-پیشرفته" class="nav-link" data-scroll-target="#سطح-پیشرفته">🔵 سطح پیشرفته</a></li>
-  <li><a href="#پیشنیازها" id="toc-پیشنیازها" class="nav-link" data-scroll-target="#پیشنیازها">🛠 پیش‌نیازها</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<div class="quarto-about-jolla">
-  <img src="images/Python-logo.png" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">برنامه‌نویسی پایتون</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header><main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
-<section id="دکتر-حسین-حقبین" class="level5">
-<h5 data-anchor-id="دکتر-حسین-حقبین">دکتر حسین حق‌بین</h5>
-<section id="هیئت-علمی-گروه-آمار-دانشکده-مهندسی-سیستم-های-هوشمند-و-علوم-داده-دانشگاه-خلیج-فارس" class="level6">
-<h6 data-anchor-id="هیئت-علمی-گروه-آمار-دانشکده-مهندسی-سیستم-های-هوشمند-و-علوم-داده-دانشگاه-خلیج-فارس">هیئت علمی گروه آمار، دانشکده مهندسی سیستم های هوشمند و علوم داده، دانشگاه خلیج فارس</h6>
-<hr>
-</section>
-</section>
-<section id="سطح-مقدماتی" class="level3">
-<h3 data-anchor-id="سطح-مقدماتی">🟢 سطح مقدماتی</h3>
-<blockquote class="blockquote">
-<p>🎯 <strong>هدف:</strong> یادگیری مبانی زبان برنامه‌نویسی پایتون</p>
-</blockquote>
-<div class="table-responsive">
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>🔢 بخش</th>
-<th>🧑‍🏫 درس</th>
-<th>📝 عنوان انگلیسی</th>
-<th>📚 جزئیات</th>
-<th>🔗 لینک</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>نصب و معرفی محیط</td>
-<td>Setup and Intro</td>
-<td>مقدمه‌ای بر پایتون و محیط برنامه‌نویسی<br>نصب Python، Jupyter، Google Colab، VS Code</td>
-<td><a href="https://github.com/haghbinh/Pylab/blob/master/Notebooks/sec1_setup_intro.ipynb">درس 1</a></td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>انواع داده</td>
-<td>Data Types</td>
-<td>متغیرها، اعداد، رشته‌ها، بولی</td>
-<td><a href="https://github.com/haghbinh/Pylab/blob/master/Notebooks/sec2_Data_Types.ipynb">درس 2</a></td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>عملگرها</td>
-<td>Operators</td>
-<td>عملگرهای ریاضی، مقایسه‌ای، منطقی</td>
-<td><a href="https://github.com/haghbinh/Pylab/blob/master/Notebooks/sec3_operators.ipynb">درس 3</a></td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>ورودی/خروجی</td>
-<td>Input / Output</td>
-<td>input(), print(), f-string، format()</td>
-<td><a href="https://github.com/haghbinh/Pylab/blob/master/Notebooks/sec4_input_output.ipynb">درس 4</a></td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td>کنترل جریان</td>
-<td>Control Flow</td>
-<td>شرط‌ها، حلقه‌ها، break و continue</td>
-<td><a href="https://github.com/haghbinh/Pylab/blob/master/Notebooks/sec5_Control_Flow.ipynb">درس 5</a></td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td>توابع</td>
-<td>Functions</td>
-<td>تعریف توابع، پارامتر، مقدار بازگشتی، math</td>
-<td><a href="https://github.com/haghbinh/Pylab/blob/master/Notebooks/sec6_Functions.ipynb">درس 6</a></td>
-</tr>
-<tr class="odd">
-<td>7</td>
-<td>ساختارهای داده</td>
-<td>Data Structures</td>
-<td>لیست، تاپل، دیکشنری، مجموعه‌ها</td>
-<td><a href="https://github.com/haghbinh/Pylab/blob/master/Notebooks/sec3_operatorssec7_Data_Structures.ipynb">درس 7</a></td>
-</tr>
-<tr class="even">
-<td>8</td>
-<td>پروژه نهایی</td>
-<td>Final Project</td>
-<td>گزارش نمرات دانشجویان با میانگین و واریانس</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
+
+
+
+<div style="direction:rtl;line-height:300%;">
+<pre><code>&lt;font face="Zar_Bd.ttf" size=5&gt;
+    &lt;div align=center&gt;
+        &lt;font face="IranNastaliq" size=10&gt;
+            &lt;p dir="rtl" style="text-align: justify;"&gt;&lt;/p&gt;
+            &lt;p dir="rtl" style="text-align: justify;"&gt;&lt;/p&gt;</code></pre>
+به نام خدا
+<p dir="rtl" style="text-align: justify;">
+</p>
+<pre><code>        &lt;/font&gt;
+           &lt;font color=#FF7500 face="IranNastaliq" size=30&gt;   &lt;h3&gt;درس پنجم: کنترل جریان  &lt;/h3&gt;  &lt;/font&gt;
+    &lt;/div&gt;
+    &lt;hr /&gt;
+    &lt;style type="text/css" scoped&gt;
+    p{
+    border: 1px solid #a2a9b1;background-color: #f8f9fa;display: inline-block;
+    };
+    &lt;/style&gt;
+&lt;/font&gt;</code></pre>
 </div>
-<hr>
-</section>
-<section id="سطح-متوسط" class="level3">
-<h3 data-anchor-id="سطح-متوسط">🟡 سطح متوسط</h3>
-<blockquote class="blockquote">
-<p>🎯 <strong>هدف:</strong> توانمندسازی برای تحلیل و کار با داده‌ها</p>
-</blockquote>
-<div class="table-responsive">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 15%">
-<col style="width: 11%">
-<col style="width: 30%">
-<col style="width: 30%">
-<col style="width: 11%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>🔢 بخش</th>
-<th>درس</th>
-<th>English Title</th>
-<th>عنوان فارسی</th>
-<th>لینک</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>9</td>
-<td>توابع پیشرفته</td>
-<td>Functional Programming</td>
-<td>لامبدا، map, filter, zip</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>10</td>
-<td>فایل‌ها</td>
-<td>File Handling</td>
-<td>فایل‌های متنی، CSV، JSON</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>11</td>
-<td>مقدمات NumPy</td>
-<td>NumPy Basics</td>
-<td>آرایه، عملیات برداری، آماره‌های ساده</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>12</td>
-<td>مقدمات Pandas</td>
-<td>Pandas Basics</td>
-<td>ساخت DataFrame، گروه‌بندی، فیلتر</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>13</td>
-<td>بصری‌سازی</td>
-<td>Visualization</td>
-<td>نمودار خطی، ستونی، دایره‌ای با Matplotlib</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>14</td>
-<td>پروژه میانی</td>
-<td>Intermediate Project</td>
-<td>تحلیل فروش با Pandas و نمودار</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
+<h2 dir="rtl" style="text-align: justify;" class="anchored">
+کنترل جریان (Control Flow)
+</h2>
+<p dir="rtl" style="text-align: justify;">
+در برنامه‌نویسی، <b>کنترل جریان</b> به تصمیم‌گیری و تکرار در اجرای دستورات گفته می‌شود. با استفاده از شرط‌ها، حلقه‌ها و دستورات <b>break</b> و <b>continue</b> می‌توان مسیر اجرای برنامه را کنترل کرد.
+</p>
+<h2 dir="rtl" style="text-align: justify;" class="anchored">
+۱. شرط‌ها (if, elif, else)
+</h2>
+<p dir="rtl" style="text-align: justify;">
+با دستور <b>if</b> می‌توانیم بر اساس یک شرط تصمیم بگیریم که بخش خاصی از کد اجرا شود. از <b>elif</b> و <b>else</b> برای بررسی شرایط دیگر یا حالت پیش‌فرض استفاده می‌کنیم.
+</p>
+<div id="201ed3c5-63a1-40e4-af06-251e2ae72d44" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">15</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> x <span class="op">&gt;</span> <span class="dv">20</span>:</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"x is greater than 20"</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> x <span class="op">==</span> <span class="dv">15</span>:</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"x is exactly 15"</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"x is less than 15"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>x is exactly 15</code></pre>
 </div>
-<hr>
-</section>
-<section id="سطح-پیشرفته" class="level3">
-<h3 data-anchor-id="سطح-پیشرفته">🔵 سطح پیشرفته</h3>
-<blockquote class="blockquote">
-<p>🎯 <strong>هدف:</strong> ساخت ابزارهای کاربردی با قابلیت‌های پیشرفته ::: {.table-responsive}</p>
-</blockquote>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 15%">
-<col style="width: 11%">
-<col style="width: 30%">
-<col style="width: 30%">
-<col style="width: 11%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>🔢 بخش</th>
-<th>درس</th>
-<th>English Title</th>
-<th>عنوان فارسی</th>
-<th>لینک</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>15</td>
-<td>شی‌گرایی پایه</td>
-<td>Basic OOP</td>
-<td>کلاس، سازنده، ویژگی‌ها، متدها</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>16</td>
-<td>شی‌گرایی پیشرفته</td>
-<td>Advanced OOP</td>
-<td>وراثت چندگانه، overriding، متدهای کلاس</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>17</td>
-<td>پایگاه داده</td>
-<td>SQLite</td>
-<td>ایجاد جدول، درج و حذف، اتصال با sqlite3</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>18</td>
-<td>رابط گرافیکی</td>
-<td>GUI with Tkinter</td>
-<td>فرم، دکمه، اتصال گرافیکی به DB</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>19</td>
-<td>مدیریت پروژه</td>
-<td>Project Management</td>
-<td>venv، ساختار پروژه، requirements.txt</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>20</td>
-<td>پروژه نهایی</td>
-<td>Final Project</td>
-<td>دفترچه تلفن گرافیکی با SQLite</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
-<p>:::</p>
-<hr>
-</section>
-<section id="پیشنیازها" class="level2">
-<h2 data-anchor-id="پیشنیازها">🛠 پیش‌نیازها</h2>
-<p>برای اجرای فایل‌ها از دستورات زیر استفاده کنید:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="conditional-expressions-ternary-operator" class="level4">
+<h4 class="anchored">Conditional Expressions (Ternary Operator)</h4>
+<div id="c15da0a2-edd9-41dd-b4bf-8c153a5f6e1c" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="bu">eval</span>(<span class="bu">input</span>(<span class="st">'Enter an x: '</span>))</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> x <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> x <span class="op">**</span> <span class="dv">2</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> x <span class="op">**</span> <span class="dv">3</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'new x = </span><span class="sc">{</span>x<span class="sc">}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdin">
+<pre><code>Enter an x:  6</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>new x = 36</code></pre>
+</div>
+</div>
+<div id="ed17f870-2d23-485a-9492-3b77d5707f9c" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Using conditional expression (ternary operator)</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="bu">eval</span>(<span class="bu">input</span>(<span class="st">'Enter an x: '</span>))</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> x <span class="op">**</span> <span class="dv">2</span> <span class="cf">if</span> x <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span> <span class="cf">else</span> x <span class="op">**</span> <span class="dv">3</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'new x = </span><span class="sc">{</span>x<span class="sc">}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdin">
+<pre><code>Enter an x:  6</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>new x = 36</code></pre>
+</div>
+</div>
+<h2 dir="rtl" style="text-align: justify;" class="anchored" data-anchor-id="conditional-expressions-ternary-operator">
+۲. حلقه‌ها (Loops)
+</h2>
+<p dir="rtl" style="text-align: justify;">
+در پایتون دو نوع حلقه داریم: <b>for</b> و <b>while</b>. - حلقه <b>for</b> برای تکرار روی یک مجموعه (لیست، رشته، یا رنج عددی) استفاده می‌شود. - حلقه <b>while</b> تا زمانی که شرط برقرار است، اجرا می‌شود.
+</p>
+<div id="bb4f9c3c-d89f-43ea-b037-c0c53e9d250f" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># for loop example</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Iteration:"</span>, i)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co"># while loop example</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> count <span class="op">&lt;</span> <span class="dv">3</span>:</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Count is"</span>, count)</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    count <span class="op">+=</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Iteration: 0
+Iteration: 1
+Iteration: 2
+Iteration: 3
+Iteration: 4
+Count is 0
+Count is 1
+Count is 2</code></pre>
+</div>
+</div>
+<h2 dir="rtl" style="text-align: justify;" class="anchored">
+۳. دستور <code>break</code>
+</h2>
+<p dir="rtl" style="text-align: justify;">
+با دستور <b>break</b> می‌توان اجرای حلقه را قبل از اتمام کامل آن متوقف کرد.
+</p>
+<div id="69efb9e6-9bc1-43ac-a4d3-3413885d759d" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> i <span class="op">==</span> <span class="dv">5</span>:</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Value:"</span>, i)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Value: 0
+Value: 1
+Value: 2
+Value: 3
+Value: 4</code></pre>
+</div>
+</div>
+<h2 dir="rtl" style="text-align: justify;" class="anchored">
+۴. دستور <code>continue</code>
+</h2>
+<p dir="rtl" style="text-align: justify;">
+با دستور <b>continue</b> می‌توان اجرای حلقه را در همان تکرار متوقف کرد و به تکرار بعدی رفت.
+</p>
+<div id="89151176-4c4f-451b-ad8a-ae7ec4dbf844" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> i <span class="op">==</span> <span class="dv">2</span>:</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Number:"</span>, i)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Number: 0
+Number: 1
+Number: 3
+Number: 4</code></pre>
+</div>
+</div>
+<h2 dir="rtl" style="text-align: justify;" class="anchored">
+تمرین
+</h2>
+<p dir="rtl" style="text-align: justify;">
+۱. برنامه‌ای بنویسید که عددی از کاربر دریافت کند و بررسی کند که عدد مثبت، منفی یا صفر است.
+</p>
+<p dir="rtl" style="text-align: justify;">
+۲. با استفاده از حلقه for، اعداد ۱ تا ۱۰ را چاپ کنید اما وقتی عدد ۷ رسید، حلقه را با break متوقف کنید.
+</p>
+<p dir="rtl" style="text-align: justify;">
+۳. با استفاده از حلقه while، اعداد ۰ تا ۵ را چاپ کنید اما اگر عدد ۳ شد، با continue آن را رد کنید و چاپ نشود.
+</p>
 
 
 </section>
-</main> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="https://haghbin.ir" class="about-link" rel="" target="">
-    <i class="bi bi-globe"></i>
-     <span class="about-link-text">وب‌سایت شخصی</span>
-  </a>
-  <a href="https://github.com/haghbinh" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">گیت‌هاب</span>
-  </a>
-  <a href="https://linkedin.com/in/haghbinh" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">لینکدین</span>
-  </a>
-</div>
-</div>
- <!-- /main -->
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
