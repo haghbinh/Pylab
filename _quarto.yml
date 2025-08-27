@@ -16,12 +16,12 @@ website:
 
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; Copyright 2022, Hossein Haghbin"
+    left: "&copy; Copyright 2025, Hossein Haghbin"
     background: "#D9E3E4"
 
   sidebar:
     background: "#D9E3E4"
-    logo: "images/Python-logo.png"
+    logo: "images/favicon.ico"
     pinned: true
     align: center
     tools:
