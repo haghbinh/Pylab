@@ -5,6 +5,109 @@ project:
 website:
   page-navigation: true
   favicon: images/favicon.ico
+  title: "آموزش برنامه نویسی پایتون"
+  description: "Homepage"
+  site-url: "https://haghbinh.github.io/Pylab/"
+
+  repo-url: https://github.com/haghbinh/Pylab
+  repo-actions: [edit, issue]
+
+  open-graph: true
+
+  page-footer:
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+    left: "&copy; Copyright 2022, Hossein Haghbin"
+    background: "#D9E3E4"
+
+  sidebar:
+    background: "#D9E3E4"
+    logo: "images/Python-logo.png"
+    pinned: true
+    align: center
+    tools:
+      - icon: github
+        href: https://github.com/haghbinh
+        text: "GitHub organization"
+      - icon: code-square
+        href: https://cmgr.oit.duke.edu/containers
+        text: "RStudio Containers"
+      - icon: person-fill
+        text: "Sakai"
+        menu:
+          - text: Discussion forum
+            url: https://sakai.duke.edu/portal/site/779c3ebe-3b88-4bcc-bd01-1813e8396a23/tool/13b6446a-a6c6-4222-8cfb-c36d1f70802b
+          - text: Gradescope
+            url: https://sakai.duke.edu/portal/site/779c3ebe-3b88-4bcc-bd01-1813e8396a23/page/aec742dc-2972-4f02-a35b-1dd3315af889
+          - text: Gradebook
+            url: https://sakai.duke.edu/portal/site/779c3ebe-3b88-4bcc-bd01-1813e8396a23/tool/69078433-67a6-4054-a2e7-9e6c202ecdc3/
+
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - section: "Course information"
+        contents:
+          - href: about.qmd
+            text: Overview
+          - href: about.qmd
+            text: Syllabus
+          - href: about.qmd
+            text: Support
+          - href: about.qmd
+            text: Teaching team
+          - href: index.qmd
+            text: Schedule
+          - href: about.qmd
+            text: Useful links
+          - href: about.qmd
+            text: FAQ
+      - section: "Computing"
+        contents:
+          - href: about.qmd
+            text: Access
+          - href: about.qmd
+            text: Troubleshooting
+      - section: "Project"
+        contents:
+          - href: about.qmd
+            text: Description
+          - href: about.qmd
+            text: Tips + resources
+      - section: "Weekly materials"
+        contents:
+          - href: about.qmd
+            text: "Week 1"
+          - href: about.qmd
+            text: "Week 2"
+          - href: about.qmd
+            text: "Week 3"
+          - href: about.qmd
+            text: "Week 4"
+      - section: "Supplemental notes"
+        contents:
+          - href: about.qmd
+            text: SLR derivations
 format:
   html:
+    theme: spacelab
     css: styles.css
+    # theme:
+    #   light: [cosmo, theme.scss]
+    #   dark: [cosmo, theme-dark.scss]
+    mainfont: "Atkinson Hyperlegible"
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+    lang: fa
+    direction: rtl
+
+freeze: auto
+
+editor: visual
+
+# website:
+#   page-navigation: true
+#   favicon: images/favicon.ico
+# format:
+#   html:
+#     css: styles.css

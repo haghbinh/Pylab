@@ -25,14 +25,22 @@
     "href": "index.html#پیشنیازها",
     "title": "برنامه‌نویسی پایتون",
     "section": "🛠 پیش‌نیازها",
-    "text": "🛠 پیش‌نیازها\nبرای اجرای فایل‌ها از دستورات زیر استفاده کنید:\npip install -r requirements.txt"
+    "text": "🛠 پیش‌نیازها\nبرای اجرای فایل‌ها از دستورات زیر استفاده کنید:\npip install -r requirements.txt",
+    "crumbs": [
+      "Course information",
+      "Schedule"
+    ]
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "About this site",
+    "crumbs": [
+      "Course information",
+      "Overview"
+    ]
   },
   {
     "objectID": "Notebooks/sec1_setup_intro.html",
