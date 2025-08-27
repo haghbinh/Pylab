@@ -15,7 +15,7 @@ website:
   open-graph: true
 
   page-footer:
-    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+    # right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
     left: "&copy; Copyright 2025, Hossein Haghbin"
     background: "#D9E3E4"
 

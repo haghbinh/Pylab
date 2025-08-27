@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://haghbinh.github.io/Pylab/index.html</loc>
-    <lastmod>2025-08-27T10:58:22.736Z</lastmod>
+    <lastmod>2025-08-27T11:09:20.891Z</lastmod>
   </url>
   <url>
     <loc>https://haghbinh.github.io/Pylab/about.html</loc>
@@ -75,5 +75,29 @@
   <url>
     <loc>https://haghbinh.github.io/Pylab/Notebooks/sec8_Data_Structures_tuples.html</loc>
     <lastmod>2025-08-23T14:43:10.762Z</lastmod>
+  </url>
+  <url>
+    <loc>https://haghbinh.github.io/Pylab/Notebooks/sec27_Project_Management.html</loc>
+    <lastmod>2025-08-26T12:26:59.140Z</lastmod>
+  </url>
+  <url>
+    <loc>https://haghbinh.github.io/Pylab/Notebooks/sec25_Tkinter_2.html</loc>
+    <lastmod>2025-08-26T12:09:28.147Z</lastmod>
+  </url>
+  <url>
+    <loc>https://haghbinh.github.io/Pylab/Notebooks/sec23_Database.html</loc>
+    <lastmod>2025-08-26T11:57:38.544Z</lastmod>
+  </url>
+  <url>
+    <loc>https://haghbinh.github.io/Pylab/Notebooks/sec22_Iterators.html</loc>
+    <lastmod>2025-08-25T11:33:56.779Z</lastmod>
+  </url>
+  <url>
+    <loc>https://haghbinh.github.io/Pylab/Notebooks/sec24_Tkinter_1.html</loc>
+    <lastmod>2025-08-26T12:03:51.147Z</lastmod>
+  </url>
+  <url>
+    <loc>https://haghbinh.github.io/Pylab/Notebooks/sec26_Tkinter_3.html</loc>
+    <lastmod>2025-08-26T12:16:04.099Z</lastmod>
   </url>
 </urlset>
