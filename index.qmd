@@ -75,11 +75,11 @@ about:
 | 20 |وراثت و چندریختی| فرم، دکمه، اتصال گرافیکی به DB |[درس 20](https://github.com/haghbinh/Pylab/blob/master/Notebooks/sec18_Methods_Attributes.ipynb) |
 | 21 | متدهای جادویی و سربارگذاری عملگرها| متدهای جادویی (Magic Methods) و بازتعریف عملگرها (Operator Overloading) | [درس 21](https://github.com/haghbinh/Pylab/blob/master/Notebooks/sec21_Magic_Methods_Operator_Overloading.ipynb) |
 | 22 | کار با iteratorها , iterableها| تکرارکننده‌ها و تکرارشونده‌ها  | [درس 22](https://github.com/haghbinh/Pylab/blob/master/Notebooks/sec22_Iterators.ipynb) |
-| 23 | پایگاه‌داده| کار با پایگاه‌داده‌های SQLite | [درس 22](https://github.com/haghbinh/Pylab/blob/master/Notebooks/sec23_Datanase.ipynb) |
-| 24 | رابط کاربری گرافیکی 1| مقدمه و ایجاد پنجره ساده و ویجت‌ها و تعامل با کاربر | [درس 23](https://github.com/haghbinh/Pylab/blob/master/Notebooks/sec24_Tkinter_1.ipynb) |
-| 25 | رابط کاربری گرافیکی 2| Frameها، Layout و مدیریت رویدادها | [درس 24](https://github.com/haghbinh/Pylab/blob/master/Notebooks/sec25_Tkinter_2.ipynb) |
-| 26 | رابط کاربری گرافیکی 3| ویجت‌های پیشرفته: Listbox، Combobox و Scrollbar| [درس 25](https://github.com/haghbinh/Pylab/blob/master/Notebooks/sec26_Tkinter_3.ipynb) |
-| 27 | مدیریت پروژه| venv، ساختار پروژه، requirements.txt| [درس 26](https://github.com/haghbinh/Pylab/blob/master/Notebooks/sec27_Project_Management.ipynb) |
+| 23 | پایگاه‌داده| کار با پایگاه‌داده‌های SQLite | [درس 23](https://github.com/haghbinh/Pylab/blob/master/Notebooks/sec23_Datanase.ipynb) |
+| 24 | رابط کاربری گرافیکی 1| مقدمه و ایجاد پنجره ساده و ویجت‌ها و تعامل با کاربر | [درس 24](https://github.com/haghbinh/Pylab/blob/master/Notebooks/sec24_Tkinter_1.ipynb) |
+| 25 | رابط کاربری گرافیکی 2| Frameها، Layout و مدیریت رویدادها | [درس 25](https://github.com/haghbinh/Pylab/blob/master/Notebooks/sec25_Tkinter_2.ipynb) |
+| 26 | رابط کاربری گرافیکی 3| ویجت‌های پیشرفته: Listbox، Combobox و Scrollbar| [درس 26](https://github.com/haghbinh/Pylab/blob/master/Notebooks/sec26_Tkinter_3.ipynb) |
+| 27 | مدیریت پروژه| venv، ساختار پروژه، requirements.txt| [درس 27](https://github.com/haghbinh/Pylab/blob/master/Notebooks/sec27_Project_Management.ipynb) |
 | * | پروژه سطح پیشرفته | مدیریت  فروشگاه آنلاین | [پروژه 3](https://github.com/haghbinh/Pylab/blob/master/Notebooks/proj3.ipynb)  |
 
 ---
