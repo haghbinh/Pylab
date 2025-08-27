@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fa" xml:lang="fa"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>sec1_setup_intro – آموزش برنامه نویسی پایتون</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0268ce42bb4599f20efeda53fe012c97.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="آموزش برنامه نویسی پایتون">
+<meta property="og:description" content="Homepage">
+<meta property="og:image" content="https://haghbinh.github.io/Pylab/Notebooks/images/p1.png">
+<meta property="og:site_name" content="آموزش برنامه نویسی پایتون">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../images/favicon.ico" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/haghbinh" title="GitHub organization" class="quarto-navigation-tool px-1" aria-label="GitHub organization"><i class="bi bi-github"></i></a>
+    <a href="https://cmgr.oit.duke.edu/containers" title="RStudio Containers" class="quarto-navigation-tool px-1" aria-label="RStudio Containers"><i class="bi bi-code-square"></i></a>
+    <div class="dropdown">
+      <a href="" title="Sakai" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Sakai"><i class="bi bi-person-fill"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://sakai.duke.edu/portal/site/779c3ebe-3b88-4bcc-bd01-1813e8396a23/tool/13b6446a-a6c6-4222-8cfb-c36d1f70802b">
+            Discussion forum
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://sakai.duke.edu/portal/site/779c3ebe-3b88-4bcc-bd01-1813e8396a23/page/aec742dc-2972-4f02-a35b-1dd3315af889">
+            Gradescope
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://sakai.duke.edu/portal/site/779c3ebe-3b88-4bcc-bd01-1813e8396a23/tool/69078433-67a6-4054-a2e7-9e6c202ecdc3/">
+            Gradebook
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Course information</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Syllabus</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Support</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Teaching team</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Useful links</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FAQ</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Computing</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Access</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Troubleshooting</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Project</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Description</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tips + resources</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Weekly materials</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 4</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">Supplemental notes</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SLR derivations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<div style="direction:rtl;line-height:300%;">
+<pre><code>&lt;font face="Zar_Bd.ttf" size=5&gt;
+    &lt;div align=center&gt;
+        &lt;font face="IranNastaliq" size=10&gt;
+            &lt;p dir="rtl" style="text-align: justify;"&gt;&lt;/p&gt;
+            &lt;p dir="rtl" style="text-align: justify;"&gt;&lt;/p&gt;</code></pre>
+به نام خدا
+<p dir="rtl" style="text-align: justify;">
+</p>
+<pre><code>        &lt;/font&gt;
+           &lt;font color=#FF7500 face="IranNastaliq" size=30&gt;   &lt;h3&gt;درس اول: معرفی و نصب پایتون &lt;/h3&gt;  &lt;/font&gt;
+    &lt;/div&gt;
+    &lt;hr /&gt;
+    &lt;style type="text/css" scoped&gt;
+    p{
+    border: 1px solid #a2a9b1;background-color: #f8f9fa;display: inline-block;
+    };
+    &lt;/style&gt;
+&lt;/font&gt;</code></pre>
+</div>
+<h2 dir="rtl" style="text-align: justify;" class="anchored">
+پایتون چیست؟
+</h2>
+<p dir="rtl" style="text-align: justify;">
+پایتون یک زبان برنامه‌نویسی ساده و قدرتمند است که برای ساخت برنامه‌های کاربردی و وب استفاده می‌شود. این زبان از نوع «شی‌گرا» و «سطح بالا» است، یعنی به کمک آن می‌توان خیلی راحت و سریع برنامه نوشت.
+</p>
+<p dir="rtl" style="text-align: justify;">
+یکی از ویژگی‌های مهم پایتون، ساده بودن دستورهای آن است. همین موضوع باعث شده یادگیری آن برای مبتدی‌ها بسیار آسان باشد. کسانی که با زبان‌های دیگر هم کار کرده‌اند، معمولاً پایتون را خواناتر و قابل‌فهم‌تر می‌دانند. این خوانایی بالا کمک می‌کند اعضای یک تیم راحت‌تر با هم همکاری کنند.
+</p>
+<p dir="rtl" style="text-align: justify;">
+در پایتون می‌توان از «ماژول‌ها» و «پکیج‌ها» استفاده کرد. این یعنی کدی که یک‌بار نوشته می‌شود را می‌توان بارها در پروژه‌های مختلف استفاده کرد. این ویژگی باعث می‌شود زمان کمتری برای نوشتن برنامه‌های جدید صرف شود.
+</p>
+<p dir="rtl" style="text-align: justify;">
+اگر برنامه‌نویسی یک ماژول خاص بنویسد، دیگران هم می‌توانند از آن استفاده کنند. اضافه کردن (Import) یا خروجی گرفتن (Export) از این ماژول‌ها بسیار ساده است.
+</p>
+<p dir="rtl" style="text-align: justify;">
+پایتون یک مزیت خیلی بزرگ دارد: همه ابزارهای اصلی آن رایگان هستند! شما هم می‌توانید مفسر و هم کتابخانه‌های آن را رایگان روی هر سیستم‌عاملی نصب و استفاده کنید. این یعنی نیازی به خرید ابزارهای گران نیست.
+</p>
+<p dir="rtl" style="text-align: justify;">
+اگر حس می‌کنید مطالب بالا برایتان پیچیده بود، نگران نباشید. در ادامه، همه مفاهیم به‌صورت کامل و ساده توضیح داده می‌شود. فقط کافی است بدانید پایتون یک زبان ساده، رایگان و کاربردی است که با آن می‌توانید نرم‌افزارهای موبایل، وب و بسیاری برنامه‌های دیگر را بسازید. اگر وقت بگذارید، می‌توانید برنامه‌های خیلی خوبی با پایتون بنویسید.
+</p>
+<h2 dir="rtl" style="text-align: justify;" class="anchored">
+چرا پایتون محبوب است؟
+</h2>
+<p dir="rtl" style="text-align: justify;">
+پایتون یکی از محبوب‌ترین زبان‌های برنامه‌نویسی دنیاست. اما فقط به خاطر درآمد بالا نیست. دلایل زیادی باعث شده افراد زیادی سراغ یادگیری و استفاده از پایتون بروند.
+</p>
+<p dir="rtl" style="text-align: justify;">
+<b>۱. شرکت‌های بزرگ دنیا از پایتون استفاده می‌کنند:</b> شرکت‌هایی مثل گوگل، یوتیوب، فیسبوک، ناسا، دراپ‌باکس، اینستاگرام و حتی IBM از پایتون در پروژه‌های خود استفاده می‌کنند. مثلاً گوگل از پایتون برای هوش مصنوعی و برنامه‌های ابری استفاده می‌کند. دراپ‌باکس هم بیشتر بخش‌های مختلف خودش را با پایتون ساخته است.
+</p>
+<figure style="text-align: center;" class="figure">
+<picture> <img loading="lazy" src="images/p1.png" width="600" height="338" class="figure-img"> </picture>
+</figure>
+<p dir="rtl" style="text-align: justify;">
+<b>۲. کاربرد زیاد در یادگیری ماشین (Machine Learning):</b> پایتون در حوزه‌ی علم داده و یادگیری ماشین بسیار محبوب است. بیشتر کتابخانه‌ها و ابزارهای هوش مصنوعی با پایتون ساخته شده‌اند. به همین دلیل کسانی که می‌خواهند وارد این حوزه شوند معمولاً از پایتون شروع می‌کنند.
+</p>
+<figure style="text-align: center;" class="figure">
+<picture> <img loading="lazy" src="images/p2.png" width="600" height="338" class="figure-img"> </picture>
+</figure>
+<p dir="rtl" style="text-align: justify;">
+<b>۳. مناسب برای افراد مبتدی:</b> اگر تازه می‌خواهید برنامه‌نویسی یاد بگیرید، پایتون انتخاب فوق‌العاده‌ای است. چون دستوراتش ساده است و سریع می‌توان نتیجه گرفت. همین باعث می‌شود یادگیری برای شما جذاب‌تر شود.
+</p>
+<p dir="rtl" style="text-align: justify;">
+<b>۴. پایتون تقریباً برای همه‌چیز کاربرد دارد:</b> با پایتون می‌توان برنامه‌های وب، اپلیکیشن‌های گرافیکی، تحلیل داده، اتوماسیون و خیلی چیزهای دیگر ساخت. یعنی اگر فقط پایتون بلد باشید، می‌توانید بیشتر پروژه‌ها را انجام دهید. این یکی از ویژگی‌های خاص این زبان است.
+</p>
+<h2 dir="rtl" style="text-align: justify;" class="anchored">
+ویژگی‌های پایتون
+</h2>
+<p dir="rtl" style="text-align: justify;">
+پایتون یک زبان برنامه‌نویسی پرقدرت است که می‌توان آن را با زبان‌هایی مثل پرل، روبی، پی‌اچ‌پی و جاوا مقایسه کرد. اما چیزی که پایتون را خاص می‌کند، سادگی و امکانات فراوان آن است. در ادامه، مهم‌ترین ویژگی‌های پایتون را با زبان ساده مرور می‌کنیم:
+</p>
+<ul dir="rtl" style="text-align: justify;">
+<li>
+<b>خوانایی بالا:</b> دستورهای پایتون ساده و شبیه زبان انسان هستند. برای مثال، اگر بخواهیم چیزی را چاپ کنیم، فقط کافی‌ست بنویسیم <code>print</code>. همین سادگی باعث می‌شود کدها راحت‌تر خوانده شوند.
+</li>
+<li>
+<b>آسان برای شروع:</b> پایتون زبانی ساده است و خیلی سریع می‌توان با آن برنامه نوشت. به همین دلیل برای ساخت نمونه‌های اولیه و پروژه‌های ساده بسیار مناسب است.
+</li>
+<li>
+<b>کتابخانه‌های آماده:</b> پایتون مجموعه بزرگی از کتابخانه‌های آماده دارد که کارهای مختلف مثل کار با فایل، جستجو، ساخت وب‌سایت و… را ساده می‌کنند. در بیشتر زبان‌ها باید این‌ها را خودتان بسازید.
+</li>
+<li>
+<b>حالت تعاملی:</b> شما می‌توانید کدهای کوتاه را در محیط تعاملی پایتون تست کنید. یک محیط برنامه‌نویسی ساده هم همراه با پایتون نصب می‌شود تا شروع کار برایتان راحت‌تر باشد.
+</li>
+<li>
+<b>قابل توسعه:</b> اگر نیاز به امکانات بیشتر دارید، می‌توانید با افزودن ماژول‌هایی که حتی با زبان‌هایی مثل C نوشته شده‌اند، پایتون را گسترش دهید.
+</li>
+<li>
+<b>قابل استفاده در برنامه‌های دیگر:</b> پایتون را می‌توان در دل برنامه‌های دیگر قرار داد تا کاربران آن برنامه‌ها بتوانند با پایتون کدنویسی کنند.
+</li>
+<li>
+<b>سازگاری با همه سیستم‌عامل‌ها:</b> پایتون روی ویندوز، لینوکس، مک و بیشتر سیستم‌ها قابل اجرا است و طوری طراحی شده که در همه جا تقریباً به یک شکل کار کند.
+</li>
+<li>
+<b>کاملاً رایگان و متن‌باز:</b> استفاده از پایتون هیچ هزینه‌ای ندارد. می‌توانید آن را آزادانه دانلود، ویرایش و استفاده کنید.
+</li>
+</ul>
+<h2 dir="rtl" style="text-align: justify;" class="anchored">
+راه‌اندازی محیط پایتون چگونه است؟
+</h2>
+<p dir="rtl" style="text-align: justify;">
+یکی از مهم‌ترین موضوعات هنگام کار کردن با هر زبان برنامه‌نویسی «راه‌اندازی» (setup) یک «محیط توسعه» (Development Environment) برای آن است که امکان اجرای کدهای نوشته شده به آن زبان را می‌دهد. بدون این محیط توسعه، کاربر هرگز قادر به بررسی اینکه کدی که نوشته کار می‌کند یا نه و آیا دارای خطا است یا خیر، نخواهد بود.
+</p>
+<div id="kaprila_blog_faradars_string-4">
+
+</div>
+<p dir="rtl" style="text-align: justify;">
+برای زبان برنامه نویسی پایتون، به چیزی با عنوان «مفسر» (interpreter) نیز نیاز است که کد را تبدیل به آنچه می‌کند که برای کامپیوتر قابل خواندن و اجرا است (و در واقع کل برنامه نوشته شده را می‌سازد). برای تبدیل کد، ابتدا باید از «شِل پایتون» (Python shell) استفاده کرد که اغلب مفسر را از طریق چیزی که خط «بَنگ» (bang) نامیده می‌شود فراخوانی می‌کند.
+</p>
+<p dir="rtl" style="text-align: justify;">
+همانطور که برای ساخت یک برنامه کاربری یا فایل دو راه وجود دارد، برای این کار نیز دو روش موجود است. می‌توان برنامه را با یک «ویرایش‌گر متن» (text editor) ساده مانند WordPad یا ++Notepad ساخت. همچنین، می‌توان برنامه را با استفاده از شل پایتون آماده کرد. مزایا و معایبی برای هر روش وجود دارد که در ادامه تشریح خواهند شد.
+</p>
+<div style="direction: rtl; text-align: right;">
+<style>
+    p {
+      direction: rtl !important;
+      text-align: right !important;
+    }
+  </style>
+<div id="# sec_install" dir="rtl" style="text-align: right;">
+<h3 class="anchored">
+نصب پایتون
+</h3>
+<p dir="rtl" style="text-align: right;">
+برای نصب پایتون به وب‌سایت رسمی آن <a href="https://www.python.org/downloads/" target="_blank"> www.python.org </a> بروید و نسخه‌ی آخر Python 3 را دانلود و نصب کنید.
+</p>
+<ul>
+<li>
+✔ در ویندوز، گزینه <strong>“Add Python to PATH”</strong> را فعال کنید.
+</li>
+<pre><code>&lt;img src="images/win_installer.png"&gt;</code></pre>
+<li>
+پس از نصب، دستور زیر را برای اطمینان اجرا کنید. برای اینکار در پنجره ترمینال ویندوز تایپ کنید:
+</li>
+</ul>
+</div>
+<p>python –version</p>
+<h2 dir="rtl" style="text-align: right;" class="anchored">
+IDE چیست؟
+</h2>
+<p dir="rtl" style="text-align: justify;">
+IDE مخفف عبارت <b>محیط توسعه یکپارچه</b> است. این ابزار نرم‌افزاری همه چیزهایی را که یک برنامه‌نویس برای نوشتن، اجرا، ویرایش و تست برنامه نیاز دارد، در یک محیط واحد در اختیار او قرار می‌دهد.
+</p>
+<p dir="rtl" style="text-align: justify;">
+به زبان ساده، اگر بخواهیم برنامه‌ای بسازیم، باید قسمت‌های مختلفی مثل نوشتن کد، طراحی ظاهر برنامه، بررسی خطاها و اجرای برنامه را انجام دهیم. با استفاده از IDE می‌توان همه این کارها را در یک برنامه انجام داد و لازم نیست برای هر مرحله، ابزار جداگانه‌ای نصب کنیم.
+</p>
+<p dir="rtl" style="text-align: justify;">
+بسیاری از IDEها امکانات مفیدی مثل <b>کد نویسی سریع‌تر</b>، <b>کامل کردن خودکار کد</b>، <b>اشکال‌زدایی (Debugging)</b> و <b>نمایش خطاها</b> را دارند. این امکانات باعث می‌شوند نوشتن برنامه آسان‌تر و سریع‌تر شود.
+</p>
+<p dir="rtl" style="text-align: justify;">
+IDEها معمولاً دارای بخش‌های زیر هستند:
+</p>
+<ul dir="rtl" style="text-align: justify;">
+<li>
+ویرایشگر کد (Code Editor)
+</li>
+<li>
+کامپایلر یا مفسر (برای اجرای کد)
+</li>
+<li>
+اشکال‌زدا (Debugger)
+</li>
+<li>
+ابزارهای تکمیل خودکار و پیشنهاد کد
+</li>
+</ul>
+<p dir="rtl" style="text-align: justify;">
+برخی IDEها فقط برای یک زبان خاص ساخته شده‌اند. مثلاً PyCharm برای پایتون یا IntelliJ برای جاوا. ولی بعضی دیگر مثل VS Code یا Eclipse برای چند زبان قابل استفاده‌اند.
+</p>
+<p dir="rtl" style="text-align: justify;">
+یکی از ویژگی‌های مهم IDEها این است که اگر در کد خطایی وجود داشته باشد، خیلی راحت آن را پیدا کرده و نشان می‌دهند. این کار به برنامه‌نویس کمک می‌کند سریع‌تر مشکلات را حل کند.
+</p>
+<p dir="rtl" style="text-align: justify;">
+در پروژه‌های بزرگ و پیچیده، استفاده از IDE بسیار کاربردی‌تر از ویرایشگرهای ساده است. چون هم سرعت برنامه‌نویسی را بیشتر می‌کند و هم کدنویسی را مرتب و راحت‌تر می‌سازد.
+</p>
+<p dir="rtl" style="text-align: justify;">
+در ادامه، تفاوت IDE و ویرایشگر متن را بررسی خواهیم کرد تا بدانیم کدام ابزار برای چه کاری مناسب‌تر است.
+</p>
+<h2 dir="rtl" style="text-align: right;" class="anchored">
+محبوب‌ترین محیط‌های توسعه (IDE) برای پایتون
+</h2>
+<p dir="rtl" style="text-align: justify;">
+برای برنامه‌نویسی با زبان پایتون، ابزارهای مختلفی وجود دارد که می‌توان از آن‌ها برای نوشتن، اجرا و تست کدها استفاده کرد. در این بخش، محبوب‌ترین IDEها و ویرایشگرهایی را که بیشتر برنامه‌نویسان پایتون استفاده می‌کنند معرفی می‌کنیم.
+</p>
+<ul dir="rtl" style="text-align: justify;">
+<li>
+<b>Jupyter Notebook:</b> محیطی تحت وب، ساده و تعاملی. مخصوص آموزش، تحلیل داده و یادگیری مرحله‌به‌مرحله. خروجی کد و نمودارها را همان‌جا نشان می‌دهد.
+</li>
+<li>
+<b>Google Colab:</b> نسخه آنلاین Jupyter که نیاز به نصب ندارد. روی فضای ابری اجرا می‌شود و برای دانشجویان بسیار مناسب است. فقط با داشتن حساب Gmail قابل استفاده است.
+</li>
+<li>
+<b>Visual Studio Code (VS Code):</b> ویرایشگر سبک و حرفه‌ای که با نصب افزونه Python، به یک IDE کامل تبدیل می‌شود. مناسب برای پروژه‌های بزرگ‌تر.
+</li>
+<li>
+<b>PyCharm:</b> یک IDE قدرتمند مخصوص پایتون از شرکت JetBrains. نسخه رایگان (Community) و حرفه‌ای (Professional) دارد. برای پروژه‌های حرفه‌ای مناسب است و امکانات زیادی برای دیباگ، تست و مدیریت پروژه‌ها فراهم می‌کند.
+</li>
+<li>
+<b>Thonny:</b> محیطی بسیار ساده و سبک، مخصوص مبتدی‌ها. اگر تازه‌کار هستید، Thonny بهترین گزینه برای شروع است.
+</li>
+<li>
+<b>Spyder:</b> مخصوص برنامه‌نویسان علمی و تحلیل‌گران داده. همراه Anaconda نصب می‌شود و برای کار با NumPy، Pandas و Matplotlib عالی است.
+</li>
+</ul>
+<p dir="rtl" style="text-align: justify;">
+هر کدام از این محیط‌ها نقاط قوت خاص خود را دارند. اگر تازه شروع کرده‌اید، پیشنهاد می‌شود با <b>Jupyter Notebook</b> یا <b>Google Colab</b> شروع کنید و سپس بر اساس نیاز، به محیط‌های پیشرفته‌تر مثل VS Code یا PyCharm مهاجرت کنید.
+</p>
+<h2 dir="rtl" style="text-align: right;" class="anchored">
+Jupyter Notebook چیست؟
+</h2>
+<p dir="rtl" style="text-align: justify;">
+Jupyter Notebook یک ابزار بسیار پرکاربرد و محبوب برای نوشتن و اجرای کدهای پایتون است. با استفاده از این ابزار، شما می‌توانید کد بنویسید، آن را اجرا کنید، نتیجه‌اش را ببینید و حتی توضیحاتی به‌صورت متن، تصویر یا فرمول‌های ریاضی در کنار آن اضافه کنید.
+</p>
+<p dir="rtl" style="text-align: justify;">
+Jupyter مخصوصاً برای <b>یادگیری برنامه‌نویسی</b>، <b>تحلیل داده‌ها</b> و <b>انجام پروژه‌های علمی و دانشگاهی</b> بسیار مناسب است. چون به شما اجازه می‌دهد مرحله به مرحله کد بنویسید، اجرا کنید و همان‌جا نتیجه را ببینید.
+</p>
+<p dir="rtl" style="text-align: justify;">
+یک فایل Jupyter Notebook با پسوند <code>.ipynb</code> ذخیره می‌شود و هر فایل شامل چندین “سلول” است. در این سلول‌ها می‌توان کد، توضیح متنی (Markdown)، نمودار، تصویر یا خروجی برنامه را قرار داد.
+</p>
+<figure style="text-align: center;" class="figure">
+<picture> <img loading="lazy" src="images/p3.png" width="800" height="600" class="figure-img"> </picture>
+</figure>
+<p dir="rtl" style="text-align: justify;">
+ویژگی‌های اصلی Jupyter Notebook:
+</p>
+<ul dir="rtl" style="text-align: justify;">
+<li>
+<b>اجرا گام‌به‌گام:</b> می‌توانید هر سلول را جداگانه اجرا کنید و نتیجه را همان‌جا ببینید.
+</li>
+<li>
+<b>نمایش همزمان کد و توضیح:</b> می‌توانید کنار هر کد، توضیح بنویسید که برای آموزش بسیار مفید است.
+</li>
+<li>
+<b>پشتیبانی از نمودار و تصویر:</b> خروجی‌هایی مثل جدول و نمودار را می‌توانید مستقیم ببینید.
+</li>
+<li>
+<b>محیط تحت مرورگر:</b> Jupyter در مرورگر اجرا می‌شود و نیازی به نصب نرم‌افزار گرافیکی جداگانه ندارد.
+</li>
+</ul>
+<p dir="rtl" style="text-align: justify;">
+برای استفاده از Jupyter دو راه اصلی وجود دارد:
+</p>
+<ul dir="rtl" style="text-align: justify;">
+<li>
+<b>استفاده از Google Colab:</b> یک محیط آنلاین رایگان از گوگل که نیاز به نصب ندارد و تنها با یک حساب Gmail قابل استفاده است.
+</li>
+<li>
+<b>نصب روی کامپیوتر شخصی:</b> می‌توانید با نصب Anaconda یا با استفاده از pip، Jupyter را روی سیستم خود اجرا کنید.
+</li>
+</ul>
+<p dir="rtl" style="text-align: justify;">
+Jupyter Notebook یکی از بهترین ابزارها برای دانشجویانی است که می‌خواهند پایتون را همراه با تمرین و پروژه یاد بگیرند. در این دوره آموزشی، ما از این ابزار برای حل تمرین‌ها، آموزش مفاهیم و انجام پروژه‌ها استفاده خواهیم کرد.
+</p>
+<h3 dir="rtl" style="text-align: right;" class="anchored">
+نصب Jupyter Notebook
+</h3>
+<p dir="rtl" style="text-align: right;">
+برای نصب Jupyter از دستور زیر در ترمینال استفاده کنید:
+</p>
+<p>pip install notebook</p>
+<p>jupyter-lab</p>
+<h2 dir="rtl" style="text-align: right;" class="anchored">
+Visual Studio Code چیست؟
+</h2>
+<p dir="rtl" style="text-align: justify;">
+Visual Studio Code یا به اختصار <b>VS Code</b>، یک ویرایشگر کد بسیار محبوب و پرکاربرد است که توسط شرکت مایکروسافت ساخته شده است. این ابزار رایگان و سبک است و روی ویندوز، مک و لینوکس قابل نصب است.
+</p>
+<p dir="rtl" style="text-align: justify;">
+VS Code از بیشتر زبان‌های برنامه‌نویسی مانند Python، JavaScript، C++، HTML و بسیاری دیگر پشتیبانی می‌کند. با نصب افزونه‌ها (Extensions) می‌توانید امکانات آن را برای هر زبان توسعه دهید.
+</p>
+<p dir="rtl" style="text-align: justify;">
+در دوره آموزش پایتون، از VS Code به‌عنوان یکی از ابزارهای اصلی برای نوشتن، اجرای کد و ساخت پروژه‌های واقعی استفاده خواهیم کرد.
+</p>
+<p dir="rtl" style="text-align: justify;">
+ویژگی‌های اصلی VS Code:
+</p>
+<ul dir="rtl" style="text-align: justify;">
+<li>
+<b>سبک و سریع:</b> اجرای سریع و مناسب برای کامپیوترهای ضعیف‌تر
+</li>
+<li>
+<b>تکمیل خودکار کد (Auto-complete):</b> پیشنهاد کدها هنگام نوشتن
+</li>
+<li>
+<b>اشکال‌زدایی (Debugging):</b> امکان بررسی و پیدا کردن خطاها در کد
+</li>
+<li>
+<b>امکان نصب افزونه‌ها:</b> برای اضافه کردن امکانات بیشتر مانند اجرای کد پایتون، کنترل نسخه (Git)، یا قالب‌بندی کد
+</li>
+<li>
+<b>پشتیبانی از فارسی:</b> با نصب افزونه‌های لازم، منوی فارسی و کدنویسی راست‌چین نیز ممکن است
+</li>
+</ul>
+<p dir="rtl" style="text-align: justify;">
+برای نوشتن برنامه‌های پایتون با VS Code، تنها کافی است:
+</p>
+<ol dir="rtl" style="text-align: justify;">
+<li>
+VS Code را از سایت رسمی <a href="https://code.visualstudio.com/">code.visualstudio.com</a> دانلود و نصب کنید.
+</li>
+<li>
+افزونه Python را از بخش Extensions نصب کنید.
+</li>
+<li>
+در صورت نیاز، Python را نیز روی سیستم خود نصب کنید.
+</li>
+</ol>
+<p dir="rtl" style="text-align: justify;">
+اگر به دنبال محیطی ساده ولی حرفه‌ای برای برنامه‌نویسی هستید، VS Code یک انتخاب عالی است. با آن می‌توانید پروژه‌های واقعی پایتون را مدیریت و اجرا کنید.
+</p>
+<div dir="rtl" style="text-align: right;">
+<h3 class="anchored">
+نصب VS Code
+</h3>
+<p dir="rtl" style="text-align: right;">
+برای کدنویسی بهتر، Visual Studio Code را از <a href="https://code.visualstudio.com/" target="_blank">اینجا</a> نصب کنید و افزونه Python را فعال نمایید. نرم‌افزار Virtual Studio Code، محیطی عالی و یکپارچه را برای توسعه کدهای پایتون فراهم کرده است. کار با این نرم‌افزار ساده‌ است و همراه خود ویژگی‌های درونی زیادی را ارائه می‌دهد که باعث ارتقای کیفیت تجربه برنامه نویسی و توسعه‌دهندگی می‌شود.
+</p>
+<figure style="text-align: center;" class="figure">
+<picture> <img loading="lazy" src="images/p4.png" width="800" height="600" class="figure-img"> </picture>
+</figure>
+</div>
+<div dir="rtl" style="text-align: right;">
+<h3 class="anchored">
+ساختار فایل‌های پایتون
+</h3>
+<p dir="rtl" style="text-align: right;">
+دو فرمت اصلی:
+</p>
+<ul>
+<li>
+<code>.py</code> برای فایل‌های متنی ساده
+</li>
+<li>
+<code>.ipynb</code> برای نوت‌بوک‌های تعاملی
+</li>
+</ul>
+</div>
+<div id="d585d4ca-22ad-4f26-9b37-fd3fe5fdefc5" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># hello.py</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="bu">input</span>(<span class="st">"نام شما چیست؟ "</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"سلام </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>نام شما چیست؟  Hossein
+سلام Hossein!</code></pre>
+</div>
+</div>
+<div id="11ee08cf-1d43-46fa-8a44-879a860b738c" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">7</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="ca1923b9-64ab-4c18-b46f-cb1bb53f16c7" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">+</span> y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="9">
+<pre><code>17</code></pre>
+</div>
+</div>
+<div dir="rtl" style="text-align: right;">
+<h3 class="anchored">
+🎯 جمع‌بندی
+</h3>
+<ul>
+<li>
+✔ نصب Python و VS Code
+</li>
+<li>
+✔ آشنایی با Jupyter و Google Colab
+</li>
+<li>
+✔ اجرای اولین کد پایتون
+</li>
+</ul>
+</div>
+
+
+</div>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/haghbinh\.github\.io\/Pylab\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Copyright 2025, Hossein Haghbin</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions"><ul><li><a href="https://github.dev/haghbinh/Pylab/blob/main/Notebooks/sec1_setup_intro.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/haghbinh/Pylab/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

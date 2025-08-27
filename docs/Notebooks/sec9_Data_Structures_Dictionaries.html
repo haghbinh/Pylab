@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>برنامه‌نویسی پایتون – آموزش برنامه نویسی پایتون</title>
+<title>sec9_data_structures_dictionaries – آموزش برنامه نویسی پایتون</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,21 +58,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0268ce42bb4599f20efeda53fe012c97.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0268ce42bb4599f20efeda53fe012c97.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -102,8 +104,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="برنامه‌نویسی پایتون – آموزش برنامه نویسی پایتون">
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="آموزش برنامه نویسی پایتون">
 <meta property="og:description" content="Homepage">
 <meta property="og:site_name" content="آموزش برنامه نویسی پایتون">
 </head>
@@ -117,7 +119,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">برنامه‌نویسی پایتون</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -131,8 +133,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./images/favicon.ico" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../images/favicon.ico" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/haghbinh" title="GitHub organization" class="quarto-navigation-tool px-1" aria-label="GitHub organization"><i class="bi bi-github"></i></a>
@@ -177,43 +179,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Syllabus</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Support</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Teaching team</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Schedule</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Useful links</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">FAQ</span></a>
   </div>
 </li>
@@ -230,13 +232,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Access</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Troubleshooting</span></a>
   </div>
 </li>
@@ -253,13 +255,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Description</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tips + resources</span></a>
   </div>
 </li>
@@ -276,25 +278,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 3</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 4</span></a>
   </div>
 </li>
@@ -311,7 +313,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link">
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">SLR derivations</span></a>
   </div>
 </li>
@@ -322,300 +324,207 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-  <ul>
-  <li><a href="#سطح-مقدماتی" id="toc-سطح-مقدماتی" class="nav-link active" data-scroll-target="#سطح-مقدماتی">🟢 سطح مقدماتی</a></li>
-  <li><a href="#سطح-مقدماتی-1" id="toc-سطح-مقدماتی-1" class="nav-link" data-scroll-target="#سطح-مقدماتی-1">🟢 سطح مقدماتی</a></li>
-  <li><a href="#سطح-متوسط" id="toc-سطح-متوسط" class="nav-link" data-scroll-target="#سطح-متوسط">🟡 سطح متوسط</a></li>
-  <li><a href="#سطح-پیشرفته" id="toc-سطح-پیشرفته" class="nav-link" data-scroll-target="#سطح-پیشرفته">🔵 سطح پیشرفته</a></li>
-  <li><a href="#پیشنیازها" id="toc-پیشنیازها" class="nav-link" data-scroll-target="#پیشنیازها">🛠 پیش‌نیازها</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<div class="quarto-about-jolla">
- <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">برنامه‌نویسی پایتون</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header><main class="content" id="quarto-document-content">
-
-<section id="دکتر-حسین-حقبین" class="level5">
-<h5 data-anchor-id="دکتر-حسین-حقبین">دکتر حسین حق‌بین</h5>
-<section id="هیئت-علمی-گروه-آمار-دانشکده-مهندسی-سیستم-های-هوشمند-و-علوم-داده-دانشگاه-خلیج-فارس" class="level6">
-<h6 data-anchor-id="هیئت-علمی-گروه-آمار-دانشکده-مهندسی-سیستم-های-هوشمند-و-علوم-داده-دانشگاه-خلیج-فارس">هیئت علمی گروه آمار، دانشکده مهندسی سیستم های هوشمند و علوم داده، دانشگاه خلیج فارس</h6>
-<hr>
-</section>
-</section>
-<section id="سطح-مقدماتی" class="level3">
-<h3 data-anchor-id="سطح-مقدماتی">🟢 سطح مقدماتی</h3>
-<blockquote class="blockquote">
-<p>🎯 <strong>هدف:</strong> یادگیری مبانی زبان برنامه‌نویسی پایتون</p>
-</blockquote>
-<hr>
-</section>
-<section id="سطح-مقدماتی-1" class="level3">
-<h3 data-anchor-id="سطح-مقدماتی-1">🟢 سطح مقدماتی</h3>
-<blockquote class="blockquote">
-<p>🎯 <strong>هدف:</strong> یادگیری مبانی زبان برنامه‌نویسی پایتون</p>
-</blockquote>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>🔢 بخش</th>
-<th>🧑‍🏫 درس</th>
-<th>📚 جزئیات</th>
-<th>🔗 لینک</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>نصب و معرفی محیط</td>
-<td>مقدمه‌ای بر پایتون و محیط برنامه‌نویسی<br>نصب Python، Jupyter، Google Colab، VS Code</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec1_setup_intro.ipynb">درس 1</a></td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>انواع داده</td>
-<td>متغیرها، اعداد، رشته‌ها، بولی</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec2_Data_Types.ipynb">درس 2</a></td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>عملگرها</td>
-<td>عملگرهای ریاضی، مقایسه‌ای، منطقی</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec3_operators.ipynb">درس 3</a></td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td>ورودی/خروجی</td>
-<td>input(), print(), f-string، format()</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec4_input_output.ipynb">درس 4</a></td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td>کنترل جریان</td>
-<td>شرط‌ها، حلقه‌ها، break و continue</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec5_Control_Flow.ipynb">درس 5</a></td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td>توابع</td>
-<td>تعریف توابع، پارامتر، مقدار بازگشتی، math</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec6_Functions.ipynb">درس 6</a></td>
-</tr>
-<tr class="odd">
-<td>7</td>
-<td>ساختارهای داده: لیست‌ها</td>
-<td>کار با لیست‌ها</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec7_Data_Structures_list.ipynb">درس 7</a></td>
-</tr>
-<tr class="even">
-<td>8</td>
-<td>ساختارهای داده: چندتایی‌ها</td>
-<td>کار با چندتایی‌ها</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec8_Data_Structures_tuples.ipynb">درس 8</a></td>
-</tr>
-<tr class="odd">
-<td>9</td>
-<td>ساختارهای داده: دیکشنری‌ها</td>
-<td>کار با دیکشنری‌ها</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec9_Data_Structures_Dictionaries.ipynb">درس 9</a></td>
-</tr>
-<tr class="even">
-<td>10</td>
-<td>ساختارهای داده: مجموعه‌ها</td>
-<td>کار با مجموعه‌ها</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec10_Data_Structures_sets.ipynb">درس 10</a></td>
-</tr>
-<tr class="odd">
-<td>11</td>
-<td>رشته ها</td>
-<td>کار با رشته ها</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec11_strings.ipynb">درس 11</a></td>
-</tr>
-<tr class="even">
-<td>*</td>
-<td>پروژه سطح مقدماتی</td>
-<td>مدیریت کتابخانه کوچک</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/proj1.ipynb">پروژه 1</a></td>
-</tr>
-</tbody>
-</table>
-<hr>
-</section>
-<section id="سطح-متوسط" class="level3">
-<h3 data-anchor-id="سطح-متوسط">🟡 سطح متوسط</h3>
-<blockquote class="blockquote">
-<p>🎯 <strong>هدف:</strong> کار با ابزارهای پیشرفته در پایتون</p>
-</blockquote>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>🔢 بخش</th>
-<th>🧑‍🏫 درس</th>
-<th>📚 جزئیات</th>
-<th>🔗 لینک</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>12</td>
-<td>کار با فایل ها</td>
-<td>کار با فایل ها</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec12_File_Handling.ipynb">درس 12</a></td>
-</tr>
-<tr class="even">
-<td>13</td>
-<td>توابع پیشرفته</td>
-<td>لامبدا، map, filter, zip</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec13_Functional_Programming.ipynb">درس 13</a></td>
-</tr>
-<tr class="odd">
-<td>14</td>
-<td>دکوراتورها و بستارها</td>
-<td>Decorators و Closure ها در پایتون</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec14_Decoders_Closure.ipynb">درس 14</a></td>
-</tr>
-<tr class="even">
-<td>15</td>
-<td>ماژول‌ها و کتابخانه‌ها</td>
-<td>کار با کتابخانه‌ها</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec15_Modules_Libraries.ipynb">درس 15</a></td>
-</tr>
-<tr class="odd">
-<td>16</td>
-<td>مدیریت استثناها</td>
-<td>ساختار try-except، raise، finaly</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec16_Exception_Handling.ipynb">درس 16</a></td>
-</tr>
-<tr class="even">
-<td>*</td>
-<td>پروژه سطح متوسطه</td>
-<td>مدیریت فروشگاه آنلاین</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/proj2.ipynb">پروژه 2</a></td>
-</tr>
-</tbody>
-</table>
-<hr>
-</section>
-<section id="سطح-پیشرفته" class="level3">
-<h3 data-anchor-id="سطح-پیشرفته">🔵 سطح پیشرفته</h3>
-<blockquote class="blockquote">
-<p>🎯 <strong>هدف:</strong> برنامه نویسی شی‌گرا و ساخت نرم‌افزارهای کاربردی</p>
-</blockquote>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>🔢 بخش</th>
-<th>🧑‍🏫 درس</th>
-<th>📚 جزئیات</th>
-<th>🔗 لینک</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>17</td>
-<td>کلاس و اشیاء</td>
-<td>کلاس‌ها و اشیاء و مقدمه OOP</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec17_Class_Object.ipynb">درس 17</a></td>
-</tr>
-<tr class="even">
-<td>18</td>
-<td>متدها و ویژگی‌ها</td>
-<td>متدها و ویژگی‌های کلاس‌ها</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec18_Methods_Attributes.ipynb">درس 18</a></td>
-</tr>
-<tr class="odd">
-<td>19</td>
-<td>کپسوله‌سازی</td>
-<td>Encapsulation، Getter و Setter و حفاظت از ویژگی‌ها</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec19_Encapsulation_Getter_Setter.ipynb">درس 19</a></td>
-</tr>
-<tr class="even">
-<td>20</td>
-<td>وراثت و چندریختی</td>
-<td>فرم، دکمه، اتصال گرافیکی به DB</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec18_Methods_Attributes.ipynb">درس 20</a></td>
-</tr>
-<tr class="odd">
-<td>21</td>
-<td>متدهای جادویی و سربارگذاری عملگرها</td>
-<td>متدهای جادویی (Magic Methods) و بازتعریف عملگرها (Operator Overloading)</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec21_Magic_Methods_Operator_Overloading.ipynb">درس 21</a></td>
-</tr>
-<tr class="even">
-<td>22</td>
-<td>پایگاه‌داده</td>
-<td>کار با پایگاه‌داده‌های SQLite</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec22_Datanase.ipynb">درس 22</a></td>
-</tr>
-<tr class="odd">
-<td>23</td>
-<td>رابط کاربری گرافیکی 1</td>
-<td>مقدمه و ایجاد پنجره ساده و ویجت‌ها و تعامل با کاربر</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec23_Tkinter_1.ipynb">درس 23</a></td>
-</tr>
-<tr class="even">
-<td>24</td>
-<td>رابط کاربری گرافیکی 2</td>
-<td>Frameها، Layout و مدیریت رویدادها</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec24_Tkinter_2.ipynb">درس 24</a></td>
-</tr>
-<tr class="odd">
-<td>25</td>
-<td>رابط کاربری گرافیکی 3</td>
-<td>ویجت‌های پیشرفته: Listbox، Combobox و Scrollbar</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec25_Tkinter_3.ipynb">درس 25</a></td>
-</tr>
-<tr class="even">
-<td>26</td>
-<td>مدیریت پروژه</td>
-<td>venv، ساختار پروژه، requirements.txt</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/sec26_Project_Management.ipynb">درس 26</a></td>
-</tr>
-<tr class="odd">
-<td>*</td>
-<td>پروژه سطح پیشرفته</td>
-<td>مدیریت فروشگاه آنلاین</td>
-<td><a href="https://github.com/haghbinh/Python-Course/blob/master/Notebooks/proj3.ipynb">پروژه 3</a></td>
-</tr>
-</tbody>
-</table>
-<hr>
-</section>
-<section id="پیشنیازها" class="level2">
-<h2 data-anchor-id="پیشنیازها">🛠 پیش‌نیازها</h2>
-<p>برای اجرای فایل‌ها از دستورات زیر استفاده کنید:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
-</section>
-</main> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="https://haghbin.ir" class="about-link" rel="" target="">
-    <i class="bi bi-globe"></i>
-     <span class="about-link-text">وب‌سایت شخصی</span>
-  </a>
-  <a href="https://github.com/haghbinh" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">گیت‌هاب</span>
-  </a>
-  <a href="https://linkedin.com/in/haghbinh" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">لینکدین</span>
-  </a>
+
+
+<div style="direction:rtl;line-height:300%;">
+<pre><code>&lt;font face="Zar_Bd.ttf" size=5&gt;
+    &lt;div align=center&gt;
+        &lt;font face="IranNastaliq" size=10&gt;
+            &lt;p dir="rtl" style="text-align: justify;"&gt;&lt;/p&gt;
+            &lt;p dir="rtl" style="text-align: justify;"&gt;&lt;/p&gt;</code></pre>
+به نام خدا
+<p dir="rtl" style="text-align: justify;">
+</p>
+<pre><code>        &lt;/font&gt;
+           &lt;font color=#FF7500 face="IranNastaliq" size=30&gt; 
+                &lt;h3&gt;درس نهم: ساختار داده‌ها در پایتون  &lt;/h3&gt; 
+                &lt;h4&gt;دیکشنری‌ها  &lt;/h4&gt; 
+           &lt;/font&gt;
+    &lt;/div&gt;
+    &lt;hr /&gt;
+    &lt;style type="text/css" scoped&gt;
+    p{
+    border: 1px solid #a2a9b1;background-color: #f8f9fa;display: inline-block;
+    };
+    &lt;/style&gt;
+&lt;/font&gt;</code></pre>
+</div>
+<h2 dir="rtl" style="text-align: justify;" class="anchored">
+ساختار داده‌ها در پایتون: دیکشنری‌ها (Dictionaries)
+</h2>
+<p dir="rtl" style="text-align: justify;">
+دیکشنری‌ها یکی از پرکاربردترین ساختارهای داده‌ای در پایتون هستند.<br>
+هر دیکشنری شامل <strong>کلید (Key)</strong> و <strong>مقدار (Value)</strong> است.<br>
+ویژگی مهم دیکشنری‌ها این است که کلیدها یکتا هستند و به وسیله کلیدها به مقادیر دسترسی پیدا می‌کنیم.
+</p>
+<h2 dir="rtl" style="text-align: justify;" class="anchored">
+۱. ایجاد دیکشنری
+</h2>
+<p dir="rtl" style="text-align: justify;">
+برای تعریف دیکشنری از آکولاد <code>{}</code> استفاده می‌کنیم و هر کلید با مقدار مربوطه با دو نقطه <code>:</code> جدا می‌شود.
+</p>
+<div id="1f352822-e5dd-4759-b7c5-ecce4c70bd74" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating dictionaries</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>student <span class="op">=</span> {<span class="st">"name"</span>: <span class="st">"Ali"</span>, <span class="st">"age"</span>: <span class="dv">20</span>, <span class="st">"major"</span>: <span class="st">"Physics"</span>}</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>grades <span class="op">=</span> {<span class="st">"math"</span>: <span class="dv">18</span>, <span class="st">"physics"</span>: <span class="dv">19</span>, <span class="st">"chemistry"</span>: <span class="dv">17</span>}</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(student)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(grades)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'name': 'Ali', 'age': 20, 'major': 'Physics'}
+{'math': 18, 'physics': 19, 'chemistry': 17}</code></pre>
 </div>
 </div>
- <!-- /main -->
+<h2 dir="rtl" style="text-align: justify;" class="anchored">
+۲. دسترسی به مقادیر
+</h2>
+<p dir="rtl" style="text-align: justify;">
+برای دسترسی به مقدار مربوط به یک کلید از <code>[key]</code> یا متد <code>get()</code> استفاده می‌کنیم.
+</p>
+<div id="c60a2e63-edb1-4d0e-add9-1521776c75fb" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>student <span class="op">=</span> {<span class="st">"name"</span>: <span class="st">"Ali"</span>, <span class="st">"age"</span>: <span class="dv">20</span>, <span class="st">"major"</span>: <span class="st">"Physics"</span>}</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(student[<span class="st">"name"</span>])      <span class="co"># Ali</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(student.get(<span class="st">"age"</span>))   <span class="co"># 20</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Ali
+20</code></pre>
+</div>
+</div>
+<h2 dir="rtl" style="text-align: justify;" class="anchored">
+۳. اضافه کردن و تغییر مقادیر
+</h2>
+<p dir="rtl" style="text-align: justify;">
+می‌توانیم یک کلید جدید اضافه کنیم یا مقدار یک کلید موجود را تغییر دهیم.
+</p>
+<div id="f57bc6a2-595a-4a25-8378-397c3acb7c3b" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>student <span class="op">=</span> {<span class="st">"name"</span>: <span class="st">"Ali"</span>, <span class="st">"age"</span>: <span class="dv">20</span>}</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Adding a new key</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>student[<span class="st">"major"</span>] <span class="op">=</span> <span class="st">"Physics"</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(student)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Modifying an existing key</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>student[<span class="st">"age"</span>] <span class="op">=</span> <span class="dv">21</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(student)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'name': 'Ali', 'age': 20, 'major': 'Physics'}
+{'name': 'Ali', 'age': 21, 'major': 'Physics'}</code></pre>
+</div>
+</div>
+<h2 dir="rtl" style="text-align: justify;" class="anchored">
+۴. حذف عناصر
+</h2>
+<p dir="rtl" style="text-align: justify;">
+برای حذف عناصر از <code>del</code> یا <code>pop</code> استفاده می‌کنیم.
+</p>
+<div id="f5d56f62-e0d8-4f3a-b333-927ef1056bf3" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>student <span class="op">=</span> {<span class="st">"name"</span>: <span class="st">"Ali"</span>, <span class="st">"age"</span>: <span class="dv">21</span>, <span class="st">"major"</span>: <span class="st">"Physics"</span>}</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove by key</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="kw">del</span> student[<span class="st">"major"</span>]</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(student)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove and return value</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> student.pop(<span class="st">"age"</span>)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(student)</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Removed age:"</span>, age)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>{'name': 'Ali', 'age': 21}
+{'name': 'Ali'}
+Removed age: 21</code></pre>
+</div>
+</div>
+<h2 dir="rtl" style="text-align: justify;" class="anchored">
+۵. حلقه روی دیکشنری
+</h2>
+<p dir="rtl" style="text-align: justify;">
+می‌توانیم روی کلیدها، مقادیر یا هر دو با هم حلقه بزنیم.
+</p>
+<div id="d7e72af6-934e-42cb-9551-10681006d381" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>grades <span class="op">=</span> {<span class="st">"math"</span>: <span class="dv">18</span>, <span class="st">"physics"</span>: <span class="dv">19</span>, <span class="st">"chemistry"</span>: <span class="dv">17</span>}</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop over keys</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> subject <span class="kw">in</span> grades:</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(subject)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop over values</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> score <span class="kw">in</span> grades.values():</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(score)</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop over key-value pairs</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> subject, score <span class="kw">in</span> grades.items():</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(subject, <span class="st">"-&gt;"</span>, score)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>math
+physics
+chemistry
+18
+19
+17
+math -&gt; 18
+physics -&gt; 19
+chemistry -&gt; 17</code></pre>
+</div>
+</div>
+<h2 dir="rtl" style="text-align: justify;" class="anchored">
+۶. توابع و متدهای مفید
+</h2>
+<p dir="rtl" style="text-align: justify;">
+دیکشنری‌ها متدهای متعددی دارند که بسیار مفید هستند.
+</p>
+<div id="49e26bb8-45a4-4364-befb-1f9503443aac" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>student <span class="op">=</span> {<span class="st">"name"</span>: <span class="st">"Ali"</span>, <span class="st">"age"</span>: <span class="dv">21</span>, <span class="st">"major"</span>: <span class="st">"Physics"</span>}</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(student.keys())    <span class="co"># List of keys</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(student.values())  <span class="co"># List of values</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(student.items())   <span class="co"># List of (key, value) tuples</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(student))      <span class="co"># Number of items</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>dict_keys(['name', 'age', 'major'])
+dict_values(['Ali', 21, 'Physics'])
+dict_items([('name', 'Ali'), ('age', 21), ('major', 'Physics')])
+3</code></pre>
+</div>
+</div>
+<h2 dir="rtl" style="text-align: justify;" class="anchored">
+تمرین
+</h2>
+<p dir="rtl" style="text-align: justify;">
+۱. یک دیکشنری شامل نام و سن چند نفر بسازید و تعداد افراد را چاپ کنید.
+</p>
+<p dir="rtl" style="text-align: justify;">
+۲. دیکشنری‌ای بسازید و یک کلید جدید با مقدار دلخواه اضافه کنید.
+</p>
+<p dir="rtl" style="text-align: justify;">
+۳. دیکشنری‌ای بسازید و یک کلید مشخص را حذف کنید و مقدار آن را چاپ کنید.
+</p>
+<p dir="rtl" style="text-align: justify;">
+۴. دیکشنری‌ای بسازید و با استفاده از حلقه، کلیدها و مقادیر را جداگانه چاپ کنید.
+</p>
+<p dir="rtl" style="text-align: justify;">
+۵. یک دیکشنری بسازید و با استفاده از متدهای keys، values و items آن را بررسی کنید.
+</p>
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -1014,7 +923,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
+    <div class="toc-actions"><ul><li><a href="https://github.dev/haghbinh/Pylab/blob/main/Notebooks/sec9_Data_Structures_Dictionaries.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/haghbinh/Pylab/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

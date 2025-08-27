@@ -4,13 +4,13 @@ project:
 
 website:
   page-navigation: true
-  favicon: images/favicon.ico
+  # favicon: images/favicon.ico
   title: "آموزش برنامه نویسی پایتون"
+
   description: "Homepage"
   site-url: "https://haghbinh.github.io/Pylab/"
 
   repo-url: https://github.com/haghbinh/Pylab
-  repo-actions: [edit, issue]
 
   open-graph: true
 
@@ -55,7 +55,7 @@ website:
             text: Support
           - href: about.qmd
             text: Teaching team
-          - href: index.qmd
+          - href: about.qmd
             text: Schedule
           - href: about.qmd
             text: Useful links
@@ -105,9 +105,3 @@ freeze: auto
 
 editor: visual
 
-# website:
-#   page-navigation: true
-#   favicon: images/favicon.ico
-# format:
-#   html:
-#     css: styles.css
