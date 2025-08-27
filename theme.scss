@@ -1,9 +1,5 @@
 /*-- scss:defaults --*/
 
-@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
-
-$font-family: "Atkinson Hyperlegible", sans-serif;
-
 /*-- scss:rules --*/
 
 .render-commit-push {
@@ -29,3 +25,78 @@ $font-family: "Atkinson Hyperlegible", sans-serif;
   background-size: 1em;
   background-position: 1em 0.5em;
 }
+
+/* styles.css */
+.table-responsive {
+  overflow-x: auto;
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  direction: rtl;
+  text-align: right;
+}
+th, td {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+}
+th {
+  background-color: #e0f7fa;
+}
+td a {
+  color: #007bff;
+  text-decoration: none;
+}
+td a:hover {
+  text-decoration: underline;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('fonts/Vazir.woff2') format('woff2'),
+       url('fonts/Vazir.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IranNastaliq';
+  src: url('fonts/IranNastaliq.woff2') format('woff2'),
+       url('fonts/IranNastaliq.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Vazir, Tahoma, sans-serif;
+}
+
+h1, .title {
+  font-family: 'IranNastaliq', Tahoma, serif;
+}
+
+
+h1 {
+  font-size: 3em;
+  color: #2d3436;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+// h5 {
+//   font-family: 'IranNastaliq';
+//   font-size: 2em;
+//   color: #2d3436;
+//   margin-bottom: 0.5rem;
+//   text-align: center;
+// }
+
+// h6 {
+//   font-family: 'IranNastaliq';
+//   font-size: 1.3em;
+//   color: #2d3436;
+//   margin-bottom: 0.5rem;
+//   text-align: center;
+// }

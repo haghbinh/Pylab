@@ -24,7 +24,13 @@ website:
     logo: "images/favicon.ico"
     pinned: true
     align: center
-
+    tools:
+          - icon: github
+            href: https://github.com/haghbinh
+            text: "GitHub organization"
+          - icon: code-square
+            href: https://cmgr.oit.duke.edu/containers
+            text: "RStudio Containers"
     style: "docked"
     search: true
     collapse-level: 1
@@ -73,11 +79,11 @@ website:
             text: SLR derivations
 format:
   html:
-    theme: spacelab
-    css: styles.css
-    # theme:
-    #   light: [cosmo, theme.scss]
-    #   dark: [cosmo, theme-dark.scss]
+    # theme: spacelab
+    # css: styles.css
+    theme:
+      light: [cosmo, theme.scss]
+      dark: [cosmo, theme-dark.scss]
     mainfont: "Atkinson Hyperlegible"
     code-copy: true
     code-overflow: wrap

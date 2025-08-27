@@ -69,10 +69,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0268ce42bb4599f20efeda53fe012c97.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-feb95e45b39cdfaa7145f7cf836e42da.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-d003ec82bd9985935875fbfa24506437.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-feb95e45b39cdfaa7145f7cf836e42da.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -102,13 +106,174 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="برنامه‌نویسی پایتون – آموزش برنامه نویسی پایتون">
 <meta property="og:description" content="Homepage">
 <meta property="og:site_name" content="آموزش برنامه نویسی پایتون">
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -134,6 +299,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./images/favicon.ico" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/haghbinh" title="GitHub organization" class="quarto-navigation-tool px-1" aria-label="GitHub organization"><i class="bi bi-github"></i></a>
+    <a href="https://cmgr.oit.duke.edu/containers" title="RStudio Containers" class="quarto-navigation-tool px-1" aria-label="RStudio Containers"><i class="bi bi-code-square"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -302,11 +472,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
   <ul>
-  <li><a href="#سطح-مقدماتی" id="toc-سطح-مقدماتی" class="nav-link active" data-scroll-target="#سطح-مقدماتی">🟢 سطح مقدماتی</a></li>
-  <li><a href="#سطح-مقدماتی-1" id="toc-سطح-مقدماتی-1" class="nav-link" data-scroll-target="#سطح-مقدماتی-1">🟢 سطح مقدماتی</a></li>
-  <li><a href="#سطح-متوسط" id="toc-سطح-متوسط" class="nav-link" data-scroll-target="#سطح-متوسط">🟡 سطح متوسط</a></li>
-  <li><a href="#سطح-پیشرفته" id="toc-سطح-پیشرفته" class="nav-link" data-scroll-target="#سطح-پیشرفته">🔵 سطح پیشرفته</a></li>
-  <li><a href="#پیشنیازها" id="toc-پیشنیازها" class="nav-link" data-scroll-target="#پیشنیازها">🛠 پیش‌نیازها</a></li>
+  <li><a href="#سطح-مقدماتی" id="toc-سطح-مقدماتی" class="nav-link active" data-scroll-target="#سطح-مقدماتی">سطح مقدماتی 🟢</a></li>
+  <li><a href="#سطح-متوسط" id="toc-سطح-متوسط" class="nav-link" data-scroll-target="#سطح-متوسط">سطح متوسط 🟡</a></li>
+  <li><a href="#سطح-پیشرفته" id="toc-سطح-پیشرفته" class="nav-link" data-scroll-target="#سطح-پیشرفته">سطح پیشرفته 🔵</a></li>
+  <li><a href="#پیشنیازها" id="toc-پیشنیازها" class="nav-link" data-scroll-target="#پیشنیازها">پیش‌نیازها 🛠</a></li>
   </ul>
 </nav>
     </div>
@@ -320,24 +489,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </header><main class="content" id="quarto-document-content">
 
-<section id="دکتر-حسین-حقبین" class="level5">
-<h5 data-anchor-id="دکتر-حسین-حقبین">دکتر حسین حق‌بین</h5>
-<section id="هیئت-علمی-گروه-آمار-دانشکده-مهندسی-سیستم-های-هوشمند-و-علوم-داده-دانشگاه-خلیج-فارس" class="level6">
-<h6 data-anchor-id="هیئت-علمی-گروه-آمار-دانشکده-مهندسی-سیستم-های-هوشمند-و-علوم-داده-دانشگاه-خلیج-فارس">هیئت علمی گروه آمار، دانشکده مهندسی سیستم های هوشمند و علوم داده، دانشگاه خلیج فارس</h6>
+
+<section id="دکتر-حسین-حقبین" class="level4">
+<h4 data-anchor-id="دکتر-حسین-حقبین"><strong>دکتر حسین حق‌بین</strong></h4>
+<p>هیئت علمی گروه آمار، دانشکده مهندسی سیستم های هوشمند و علوم داده، دانشگاه خلیج فارس</p>
 <hr>
-</section>
 </section>
 <section id="سطح-مقدماتی" class="level3">
-<h3 data-anchor-id="سطح-مقدماتی">🟢 سطح مقدماتی</h3>
+<h3 data-anchor-id="سطح-مقدماتی">سطح مقدماتی 🟢</h3>
 <blockquote class="blockquote">
-<p>🎯 <strong>هدف:</strong> یادگیری مبانی زبان برنامه‌نویسی پایتون</p>
-</blockquote>
-<hr>
-</section>
-<section id="سطح-مقدماتی-1" class="level3">
-<h3 data-anchor-id="سطح-مقدماتی-1">🟢 سطح مقدماتی</h3>
-<blockquote class="blockquote">
-<p>🎯 <strong>هدف:</strong> یادگیری مبانی زبان برنامه‌نویسی پایتون</p>
+<p><strong>هدف:</strong> یادگیری مبانی زبان برنامه‌نویسی پایتون 🎯</p>
 </blockquote>
 <table class="caption-top table">
 <thead>
@@ -426,9 +587,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <hr>
 </section>
 <section id="سطح-متوسط" class="level3">
-<h3 data-anchor-id="سطح-متوسط">🟡 سطح متوسط</h3>
+<h3 data-anchor-id="سطح-متوسط">سطح متوسط 🟡</h3>
 <blockquote class="blockquote">
-<p>🎯 <strong>هدف:</strong> کار با ابزارهای پیشرفته در پایتون</p>
+<p><strong>هدف:</strong> کار با ابزارهای پیشرفته در پایتون 🎯</p>
 </blockquote>
 <table class="caption-top table">
 <thead>
@@ -481,9 +642,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <hr>
 </section>
 <section id="سطح-پیشرفته" class="level3">
-<h3 data-anchor-id="سطح-پیشرفته">🔵 سطح پیشرفته</h3>
+<h3 data-anchor-id="سطح-پیشرفته">سطح پیشرفته 🔵</h3>
 <blockquote class="blockquote">
-<p>🎯 <strong>هدف:</strong> برنامه نویسی شی‌گرا و ساخت نرم‌افزارهای کاربردی</p>
+<p><strong>هدف:</strong> برنامه نویسی شی‌گرا و ساخت نرم‌افزارهای کاربردی 🎯</p>
 </blockquote>
 <table class="caption-top table">
 <thead>
@@ -571,8 +732,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </table>
 <hr>
 </section>
-<section id="پیشنیازها" class="level2">
-<h2 data-anchor-id="پیشنیازها">🛠 پیش‌نیازها</h2>
+<section id="پیشنیازها" class="level3">
+<h3 data-anchor-id="پیشنیازها">پیش‌نیازها 🛠</h3>
 <p>برای اجرای فایل‌ها از دستورات زیر استفاده کنید:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
@@ -598,6 +759,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
